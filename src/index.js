@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import SurveyComponent from "./SurveyComponent";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<SurveyComponent />, document.getElementById('root'));

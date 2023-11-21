@@ -1,0 +1,14 @@
+.sd-question__content {
+    display: flex;
+    justify-content: center;
+}
+
+.sd-rating__item {
+    flex: 1;
+    text-align: center;
+}
+
+.sd-scrollable-container:not(.sd-scrollable-container--compact) {
+    width: 100%;
+    max-width: 100%;
+}
