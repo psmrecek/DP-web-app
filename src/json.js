@@ -1,7 +1,7 @@
 export const json = {
   "title": "CapybaraSurvey",
-  "description": "Chill Insights, Solid Results",
-  "logo": "Logo.png",
+  // "description": "Chill Insights, Solid Results",
+  // "logo": "Logo.png",
   "logoPosition": "right",
   "pages": [
     {
@@ -11,7 +11,7 @@ export const json = {
           "type": "html",
           "name": "instruction1",
           "state": "expanded",
-          "html": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dOtlQJh5T4w?si=zJwgtkFp3JixN-ou\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<iframe width=\"1120\" height=\"630\" src=\"https://www.youtube.com/embed/dOtlQJh5T4w?si=zJwgtkFp3JixN-ou\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ]
     },
@@ -89,7 +89,7 @@ export const json = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 20
+      "maxTimeToFinish": 5
     },
     {
       "name": "page6",
@@ -164,7 +164,7 @@ export const json = {
         }
       ],
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 20
+      "maxTimeToFinish": 5
     },
     {
       "name": "page10",
@@ -221,6 +221,7 @@ export const json = {
   "showPageTitles": false,
   "showProgressBar": "top",
   "progressBarType": "questions",
+  // "firstPageIsStarted": true,
   "showTimerPanel": "bottom",
   "widthMode": "static",
   "width": "1100px"

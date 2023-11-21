@@ -9,6 +9,28 @@
 }
 
 .sd-scrollable-container:not(.sd-scrollable-container--compact) {
-    width: 100%;
+    width: 100% !important;
     max-width: 100%;
+}
+
+.sd-body.sd-body--static {
+    padding-bottom: 0px !important;
+}
+
+.sv-components-row {
+    height: calc(100vh - 88px - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));
+}
+
+.sv-components-column {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    padding-bottom: calc((144px - 46px) / 2);
+}
+
+.sd-body.sd-body--static .sd-body__navigation.sd-action-bar {
+    display: flex;
+    align-items: flex-end;
 }
