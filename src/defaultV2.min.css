@@ -1302,7 +1302,7 @@ sv-brand-info,
     white-space: nowrap;
     color: var( --sjs-font-questiontitle-color, var(--sjs-general-forecolor, var(--foreground, #161616)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     margin: 0 calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
 }
 
@@ -2089,7 +2089,7 @@ li:focus .sv-list__item.sv-list__item--selected .sv-list__item-icon use {
     justify-content: center;
     min-height: calc(24 * (var(--sjs-base-unit, var(--base-unit, 8px))));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     color: var( --sjs-font-questiondescription-color, var(--sjs-general-forecolor-light, rgba(0, 0, 0, 0.45)));
 }
 
@@ -2241,7 +2241,7 @@ li:focus .sv-list__item.sv-list__item--selected .sv-list__item-icon use {
     width: 100%;
     box-sizing: border-box;
     padding: calc(1.5 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     font-family: var( --sjs-font-editorfont-family, var(--sjs-font-family, var(--font-family, var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-editorfont-weight, 400);
     color: var( --sjs-font-editorfont-color, var(--sjs-general-forecolor, rgba(0, 0, 0, 0.91)));
@@ -2343,7 +2343,7 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
 .sd-input[type="range"] {
     box-sizing: content-box;
     width: calc(100% - 4 * var(--sjs-base-unit, var(--base-unit, 8px)));
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-input[type="range"]::-webkit-slider-runnable-track {
@@ -2470,7 +2470,7 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
 .sjs_sp_placeholder {
     color: var( --sjs-font-questiondescription-color, var(--sjs-general-forecolor-light, rgba(0, 0, 0, 0.45)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sjs_sp_container {
@@ -2545,8 +2545,8 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
 }
 
 .sd-action.sd-matrixdynamic__remove-btn .sd-action__icon {
-    width: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    width: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-matrixdynamic__btn {
@@ -2721,7 +2721,7 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
 .sd-table__cell {
     font-weight: normal;
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     padding: 0 var(--sjs-base-unit, var(--base-unit, 8px));
     color: var(--sjs-general-forecolor, var(--foreground, #161616));
     text-align: center;
@@ -2774,7 +2774,7 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
 
 .sd-table__cell--header span {
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     font-weight: var(--sjs-font-questiontitle-weight, 600);
 }
 
@@ -3278,7 +3278,7 @@ textarea.sd-input:disabled:not(.sd-input--disabled) {
     font-family: var( --sjs-font-editorfont-family, var(--sjs-font-family, var(--font-family, var(--sjs-default-font-family))));
     font-style: normal;
     font-weight: var(--sjs-font-editorfont-weight, 400);
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
     color: var( --sjs-font-questiontitle-color, var(--sjs-general-forecolor, var(--foreground, #161616)));
     white-space: normal;
@@ -3740,7 +3740,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
     font-weight: var(--sjs-font-editorfont-weight, 400);
     color: var( --sjs-font-questiontitle-color, var(--sjs-general-forecolor, var(--foreground, #161616)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     display: inline-block;
 }
 
@@ -3873,11 +3873,11 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-dropdown__value {
     width: 100%;
-    min-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    min-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     font-family: var( --sjs-font-editorfont-family, var(--sjs-font-family, var(--font-family, var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-editorfont-weight, 400);
     color: var( --sjs-font-editorfont-color, var(--sjs-general-forecolor, rgba(0, 0, 0, 0.91)));
@@ -3907,8 +3907,8 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-dropdown_chevron-button-svg,
 .sd-dropdown_clean-button-svg {
-    width: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    width: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-input.sd-dropdown:focus-within {
@@ -3933,7 +3933,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
     font-weight: var(--sjs-font-editorfont-weight, 400);
     color: var( --sjs-font-editorfont-color, var(--sjs-general-forecolor, rgba(0, 0, 0, 0.91)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3981,7 +3981,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 }
 
 .sv-dropdown-popup .sd-list__item-body {
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
     font-weight: var(--sjs-font-editorfont-weight, 400);
     font-family: var( --sjs-font-editorfont-family, var(--sjs-font-family, var(--font-family, var(--sjs-default-font-family))));
@@ -4002,8 +4002,8 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 }
 
 .sd-tagbox_clean-button {
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
-    padding: calc( 0.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
+    padding: calc( 0.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     margin: auto 0;
 }
 
@@ -4045,7 +4045,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-tagbox-item_clean-button-svg {
     display: block;
-    padding: calc( 0.25 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    padding: calc( 0.25 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     width: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
     height: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
 }
@@ -4112,14 +4112,14 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 }
 
 .sd-dropdown__hint-suffix.sd-tagbox__hint-suffix {
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     height: 100%;
     display: flex;
     align-items: center;
 }
 
 .sd-dropdown__hint-prefix.sd-tagbox__hint-prefix {
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     height: 100%;
     display: flex;
     align-items: center;
@@ -4177,8 +4177,8 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-imagepicker__check-icon {
     display: block;
-    width: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    width: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     fill: var(--sjs-primary-backcolor, var(--primary, #19b394));
 }
 
@@ -4212,7 +4212,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-imagepicker__text {
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     margin-top: var(--sjs-base-unit, var(--base-unit, 8px));
     color: var( --sjs-font-questiontitle-color, var(--sjs-general-forecolor, var(--foreground, #161616)));
 }
@@ -4484,7 +4484,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
     font-weight: var(--sjs-font-editorfont-weight, 400);
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
     color: var( --sjs-font-editorfont-placeholdercolor, var(--sjs-general-forecolor-light, var(--foreground-light, #909090)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     padding: var(--sjs-base-unit, var(--base-unit, 8px)) calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
 }
 
@@ -4745,7 +4745,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
     cursor: pointer;
     font-family: var( --sjs-font-family, var(--font-family, var(--sjs-default-font-family)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
     color: var( --sjs-font-questiondescription-color, var(--sjs-general-forecolor-light, rgba(0, 0, 0, 0.45)));
     overflow-x: hidden;
     white-space: nowrap;
@@ -4886,7 +4886,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
     white-space: normal;
     color: var( --sjs-font-questiondescription-color, var(--sjs-general-forecolor-light, rgba(0, 0, 0, 0.45)));
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-root-modern--mobile .sd-file__decorator {
@@ -5571,7 +5571,7 @@ legend+sv-ng-rating-item+.sd-rating__item-smiley {
 
 .sd-multipletext__item-title span {
     font-size: var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
-    line-height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    line-height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-multipletext__item-title {
@@ -5757,8 +5757,8 @@ svg.sd-action--icon {
 
 .sd-context-btn svg {
     display: block;
-    width: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
-    height: calc( 1.5 * ( var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)))));
+    width: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
+    height: calc( 1.5 * var( --sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px))));
 }
 
 .sd-context-btn use {
