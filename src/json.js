@@ -15,7 +15,7 @@ export const json = {
         }
       ]
     },
-    
+
 
     {
       "name": "page_2",
@@ -1044,7 +1044,7 @@ export const json = {
         {
           "type": "rating",
           "name": "question_42",
-          "title": "I am someone who is suspicious of others’ intentions",
+          "title": "I am someone who is suspicious of others' intentions",
           "valueName": "value_42",
           "isRequired": true,
           "autoGenerate": false,
@@ -1182,7 +1182,7 @@ export const json = {
         {
           "type": "rating",
           "name": "question_48",
-          "title": "I am someone who leaves a mess, doesn’t clean up",
+          "title": "I am someone who leaves a mess, doesn't clean up",
           "valueName": "value_48",
           "isRequired": true,
           "autoGenerate": false,
@@ -1218,7 +1218,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_4",
-          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value_37}</i></p><p><b>I am someone who is suspicious of others’ intentions:</b> <i>{value_42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value_47}</i></p>"
+          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value_37}</i></p><p><b>I am someone who is suspicious of others' intentions:</b> <i>{value_42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value_47}</i></p>"
         }
       ],
       "readOnly": true
@@ -1531,270 +1531,286 @@ export const json = {
       "name": "page_72",
       "elements": [
         {
-          "type": "matrix",
-          "name": "ground_truth",
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
           "isRequired": true,
           "columns": [
             {
-              "value": "lie_column",
-              "text": "Lie"
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
             },
             {
-              "value": "half-truth_column",
-              "text": "Half-truth"
-            },
-            {
-              "value": "truth_column",
-              "text": "Truth"
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
             }
           ],
           "rows": [
 
             {
               "value": "ground_truth_row_1",
-              "text": "I am someone who is outgoing, sociable: {value_1}"
+              "text": "I am someone who is outgoing, sociable"
             },
             {
               "value": "ground_truth_row_2",
-              "text": "I am someone who is compassionate, has a soft heart: {value_2}"
+              "text": "I am someone who is compassionate, has a soft heart"
             },
             {
               "value": "ground_truth_row_3",
-              "text": "I am someone who tends to be disorganized: {value_3}"
+              "text": "I am someone who tends to be disorganized"
             },
             {
               "value": "ground_truth_row_4",
-              "text": "I am someone who is relaxed, handles stress well: {value_4}"
+              "text": "I am someone who is relaxed, handles stress well"
             },
             {
               "value": "ground_truth_row_5",
-              "text": "I am someone who has few artistic interests: {value_5}"
+              "text": "I am someone who has few artistic interests"
             },
             {
               "value": "ground_truth_row_6",
-              "text": "I am someone who has an assertive personality: {value_6}"
+              "text": "I am someone who has an assertive personality"
             },
             {
               "value": "ground_truth_row_7",
-              "text": "I am someone who is respectful, treats others with respect: {value_7}"
+              "text": "I am someone who is respectful, treats others with respect"
             },
             {
               "value": "ground_truth_row_8",
-              "text": "I am someone who tends to be lazy: {value_8}"
+              "text": "I am someone who tends to be lazy"
             },
             {
               "value": "ground_truth_row_9",
-              "text": "I am someone who stays optimistic after experiencing a setback: {value_9}"
+              "text": "I am someone who stays optimistic after experiencing a setback"
             },
             {
               "value": "ground_truth_row_10",
-              "text": "I am someone who is curious about many different things: {value_10}"
+              "text": "I am someone who is curious about many different things"
             },
             {
               "value": "ground_truth_row_11",
-              "text": "I am someone who rarely feels excited or eager: {value_11}"
+              "text": "I am someone who rarely feels excited or eager"
             },
             {
               "value": "ground_truth_row_12",
-              "text": "I am someone who tends to find fault with others: {value_12}"
+              "text": "I am someone who tends to find fault with others"
             },
             {
               "value": "ground_truth_row_13",
-              "text": "I am someone who is dependable, steady: {value_13}"
+              "text": "I am someone who is dependable, steady"
             },
             {
               "value": "ground_truth_row_14",
-              "text": "I am someone who is moody, has up and down mood swings: {value_14}"
+              "text": "I am someone who is moody, has up and down mood swings"
             },
             {
               "value": "ground_truth_row_15",
-              "text": "I am someone who is inventive, finds clever ways to do things: {value_15}"
+              "text": "I am someone who is inventive, finds clever ways to do things"
             },
             {
               "value": "ground_truth_row_16",
-              "text": "I am someone who tends to be quiet: {value_16}"
+              "text": "I am someone who tends to be quiet"
             },
             {
               "value": "ground_truth_row_17",
-              "text": "I am someone who feels little sympathy for others: {value_17}"
+              "text": "I am someone who feels little sympathy for others"
             },
             {
               "value": "ground_truth_row_18",
-              "text": "I am someone who is systematic, likes to keep things in order: {value_18}"
+              "text": "I am someone who is systematic, likes to keep things in order"
             },
             {
               "value": "ground_truth_row_19",
-              "text": "I am someone who can be tense: {value_19}"
+              "text": "I am someone who can be tense"
             },
             {
               "value": "ground_truth_row_20",
-              "text": "I am someone who is fascinated by art, music, or literature: {value_20}"
+              "text": "I am someone who is fascinated by art, music, or literature"
             },
             {
               "value": "ground_truth_row_21",
-              "text": "I am someone who is dominant, acts as a leader: {value_21}"
+              "text": "I am someone who is dominant, acts as a leader"
             },
             {
               "value": "ground_truth_row_22",
-              "text": "I am someone who starts arguments with others: {value_22}"
+              "text": "I am someone who starts arguments with others"
             },
             {
               "value": "ground_truth_row_23",
-              "text": "I am someone who has difficulty getting started on tasks: {value_23}"
+              "text": "I am someone who has difficulty getting started on tasks"
             },
             {
               "value": "ground_truth_row_24",
-              "text": "I am someone who feels secure, comfortable with self: {value_24}"
+              "text": "I am someone who feels secure, comfortable with self"
             },
             {
               "value": "ground_truth_row_25",
-              "text": "I am someone who avoids intellectual, philosophical discussions: {value_25}"
+              "text": "I am someone who avoids intellectual, philosophical discussions"
             },
             {
               "value": "ground_truth_row_26",
-              "text": "I am someone who is less active than other people: {value_26}"
+              "text": "I am someone who is less active than other people"
             },
             {
               "value": "ground_truth_row_27",
-              "text": "I am someone who has a forgiving nature: {value_27}"
+              "text": "I am someone who has a forgiving nature"
             },
             {
               "value": "ground_truth_row_28",
-              "text": "I am someone who can be somewhat careless: {value_28}"
+              "text": "I am someone who can be somewhat careless"
             },
             {
               "value": "ground_truth_row_29",
-              "text": "I am someone who is emotionally stable, not easily upset: {value_29}"
+              "text": "I am someone who is emotionally stable, not easily upset"
             },
             {
               "value": "ground_truth_row_30",
-              "text": "I am someone who has little creativity: {value_30}"
+              "text": "I am someone who has little creativity"
             },
             {
               "value": "ground_truth_row_31",
-              "text": "I am someone who is sometimes shy, introverted: {value_31}"
+              "text": "I am someone who is sometimes shy, introverted"
             },
             {
               "value": "ground_truth_row_32",
-              "text": "I am someone who is helpful and unselfish with others: {value_32}"
+              "text": "I am someone who is helpful and unselfish with others"
             },
             {
               "value": "ground_truth_row_33",
-              "text": "I am someone who keeps things neat and tidy: {value_33}"
+              "text": "I am someone who keeps things neat and tidy"
             },
             {
               "value": "ground_truth_row_34",
-              "text": "I am someone who worries a lot: {value_34}"
+              "text": "I am someone who worries a lot"
             },
             {
               "value": "ground_truth_row_35",
-              "text": "I am someone who values art and beauty: {value_35}"
+              "text": "I am someone who values art and beauty"
             },
             {
               "value": "ground_truth_row_36",
-              "text": "I am someone who finds it hard to influence people: {value_36}"
+              "text": "I am someone who finds it hard to influence people"
             },
             {
               "value": "ground_truth_row_37",
-              "text": "I am someone who is sometimes rude to others: {value_37}"
+              "text": "I am someone who is sometimes rude to others"
             },
             {
               "value": "ground_truth_row_38",
-              "text": "I am someone who is efficient, gets things done: {value_38}"
+              "text": "I am someone who is efficient, gets things done"
             },
             {
               "value": "ground_truth_row_39",
-              "text": "I am someone who often feels sad: {value_39}"
+              "text": "I am someone who often feels sad"
             },
             {
               "value": "ground_truth_row_40",
-              "text": "I am someone who is complex, a deep thinker: {value_40}"
+              "text": "I am someone who is complex, a deep thinker"
             },
             {
               "value": "ground_truth_row_41",
-              "text": "I am someone who is full of energy: {value_41}"
+              "text": "I am someone who is full of energy"
             },
             {
               "value": "ground_truth_row_42",
-              "text": "I am someone who is suspicious of others’ intentions: {value_42}"
+              "text": "I am someone who is suspicious of others' intentions"
             },
             {
               "value": "ground_truth_row_43",
-              "text": "I am someone who is reliable, can always be counted on: {value_43}"
+              "text": "I am someone who is reliable, can always be counted on"
             },
             {
               "value": "ground_truth_row_44",
-              "text": "I am someone who keeps their emotions under control: {value_44}"
+              "text": "I am someone who keeps their emotions under control"
             },
             {
               "value": "ground_truth_row_45",
-              "text": "I am someone who has difficulty imagining things: {value_45}"
+              "text": "I am someone who has difficulty imagining things"
             },
             {
               "value": "ground_truth_row_46",
-              "text": "I am someone who is talkative: {value_46}"
+              "text": "I am someone who is talkative"
             },
             {
               "value": "ground_truth_row_47",
-              "text": "I am someone who can be cold and uncaring: {value_47}"
+              "text": "I am someone who can be cold and uncaring"
             },
             {
               "value": "ground_truth_row_48",
-              "text": "I am someone who leaves a mess, doesn’t clean up: {value_48}"
+              "text": "I am someone who leaves a mess, doesn't clean up"
             },
             {
               "value": "ground_truth_row_49",
-              "text": "I am someone who rarely feels anxious or afraid: {value_49}"
+              "text": "I am someone who rarely feels anxious or afraid"
             },
             {
               "value": "ground_truth_row_50",
-              "text": "I am someone who thinks poetry and plays are boring: {value_50}"
+              "text": "I am someone who thinks poetry and plays are boring"
             },
             {
               "value": "ground_truth_row_51",
-              "text": "I am someone who prefers to have others take charge: {value_51}"
+              "text": "I am someone who prefers to have others take charge"
             },
             {
               "value": "ground_truth_row_52",
-              "text": "I am someone who is polite, courteous to others: {value_52}"
+              "text": "I am someone who is polite, courteous to others"
             },
             {
               "value": "ground_truth_row_53",
-              "text": "I am someone who is persistent, works until the task is finished: {value_53}"
+              "text": "I am someone who is persistent, works until the task is finished"
             },
             {
               "value": "ground_truth_row_54",
-              "text": "I am someone who tends to feel depressed, blue: {value_54}"
+              "text": "I am someone who tends to feel depressed, blue"
             },
             {
               "value": "ground_truth_row_55",
-              "text": "I am someone who has little interest in abstract ideas: {value_55}"
+              "text": "I am someone who has little interest in abstract ideas"
             },
             {
               "value": "ground_truth_row_56",
-              "text": "I am someone who shows a lot of enthusiasm: {value_56}"
+              "text": "I am someone who shows a lot of enthusiasm"
             },
             {
               "value": "ground_truth_row_57",
-              "text": "I am someone who assumes the best about people: {value_57}"
+              "text": "I am someone who assumes the best about people"
             },
             {
               "value": "ground_truth_row_58",
-              "text": "I am someone who sometimes behaves irresponsibly: {value_58}"
+              "text": "I am someone who sometimes behaves irresponsibly"
             },
             {
               "value": "ground_truth_row_59",
-              "text": "I am someone who is temperamental, gets emotional easily: {value_59}"
+              "text": "I am someone who is temperamental, gets emotional easily"
             },
             {
               "value": "ground_truth_row_60",
-              "text": "I am someone who is original, comes up with new ideas: {value_60}"
+              "text": "I am someone who is original, comes up with new ideas"
             },
-          ],
-          "isAllRowRequired": true
+          ]
         }
       ]
-    }
+    },
 
   ],
   "showPageTitles": false,

@@ -53,13 +53,13 @@ questions = ["I am someone who is outgoing, sociable",
              "I am someone who often feels sad",
              "I am someone who is complex, a deep thinker",
              "I am someone who is full of energy",
-             "I am someone who is suspicious of others’ intentions",
+             "I am someone who is suspicious of others' intentions",
              "I am someone who is reliable, can always be counted on",
              "I am someone who keeps their emotions under control",
              "I am someone who has difficulty imagining things",
              "I am someone who is talkative",
              "I am someone who can be cold and uncaring",
-             "I am someone who leaves a mess, doesn’t clean up",
+             "I am someone who leaves a mess, doesn't clean up",
              "I am someone who rarely feels anxious or afraid",
              "I am someone who thinks poetry and plays are boring",
              "I am someone who prefers to have others take charge",
@@ -131,36 +131,52 @@ matrix_string = '''
       "name": {page_name},
       "elements": [
         {{
-          "type": "matrix",
-          "name": "ground_truth",
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
           "isRequired": true,
           "columns": [
             {{
-              "value": "lie_column",
-              "text": "Lie"
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
             }},
             {{
-              "value": "half-truth_column",
-              "text": "Half-truth"
-            }},
-            {{
-              "value": "truth_column",
-              "text": "Truth"
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {{
+                  "value": "lie",
+                  "text": "Lie"
+                }},
+                {{
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                }},
+                {{
+                  "value": "truth",
+                  "text": "Truth"
+                }}
+              ],
+              "storeOthersAsComment": true
             }}
           ],
           "rows": [
             {rows}
-          ],
-          "isAllRowRequired": true
+          ]
         }}
       ]
-    }}
+    }},
   '''
 
 row_string = '''
             {{
               "value": {value},
-              "text": "{question}: {{{question_value}}}"
+              "text": "{question}"
             }},'''
 
 
@@ -172,14 +188,17 @@ rows = ''
 
 for i in range(1, 61):
     if i == 1:
-        print(first_page.format(page_name='"page_'+str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"'))
+        print(first_page.format(page_name='"page_'+str(page_counter)+'"',
+              instructions_name='"instructions_'+str(instructions_counter)+'"'))
         page_counter += 1
         instructions_counter += 1
 
-    print(question_string.format(page_name='"page_'+str(page_counter)+'"', question_name='"question_' + str(question_counter)+'"', question_text='"'+questions[i-1]+'"', value_name='"value_'+str(question_counter)+'"'))
+    print(question_string.format(page_name='"page_'+str(page_counter)+'"', question_name='"question_' +
+          str(question_counter)+'"', question_text='"'+questions[i-1]+'"', value_name='"value_'+str(question_counter)+'"'))
     page_counter += 1
     question_counter += 1
-    rows += row_string.format(value='"ground_truth_row_'+str(i)+'"', question=questions[i-1], question_value='value_'+str(i))
+    rows += row_string.format(value='"ground_truth_row_' +
+                              str(i)+'"', question=questions[i-1])
 
     if i % 12 == 0:
         header = f'Elaboration part {i // 12}'
@@ -187,17 +206,19 @@ for i in range(1, 61):
             instruction_header = 'Welcome to the first elaboration part of the questionnaire!'
         else:
             instruction_header = header
-        print(instructions_string.format(page_name='"page_'+str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header))
+        print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+              instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header))
         page_counter += 1
         instructions_counter += 1
         index1 = i - 11
         index2 = i - 6
         index3 = i - 1
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'"', header=header, q1=questions[index1 - 1], q2=questions[index2 - 1], q3=questions[index3 - 1], v1='value_'+str(index1), v2='value_'+str(index2), v3='value_'+str(index3)))
+        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'"', header=header,
+              q1=questions[index1 - 1], q2=questions[index2 - 1], q3=questions[index3 - 1], v1='value_'+str(index1), v2='value_'+str(index2), v3='value_'+str(index3)))
         page_counter += 1
         elaboration_counter += 1
 
     if i % 60 == 0:
-        print(matrix_string.format(page_name='"page_'+str(page_counter)+'"', rows=rows))
+        print(matrix_string.format(page_name='"page_' +
+              str(page_counter)+'"', rows=rows))
         page_counter += 1
-        
