@@ -1,8 +1,9 @@
 export const json = {
-  "title": "CapybaraSurvey",
+  "title": "DP Survey Demo",
   // "description": "Chill Insights, Solid Results",
   // "logo": "Logo.png",
-  "logoPosition": "right",
+  // "logoPosition": "right",
+  "completedHtml": "<h2>Thank you for completing the survey</h2>",
   "pages": [
     {
       "name": "page_1",
@@ -1814,6 +1815,7 @@ export const json = {
 
   ],
   "showPageTitles": false,
+  "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
   "showProgressBar": "top",
   "progressBarType": "questions",
   // "firstPageIsStarted": true,
