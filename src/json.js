@@ -5,11 +5,11 @@ export const json = {
   "logoPosition": "right",
   "pages": [
     {
-      "name": "page1",
+      "name": "page_1",
       "elements": [
         {
           "type": "html",
-          "name": "instructions1",
+          "name": "instructions_1",
           "state": "expanded",
           "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/dOtlQJh5T4w?si=zJwgtkFp3JixN-ou\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
@@ -18,13 +18,13 @@ export const json = {
     
 
     {
-      "name": "page2",
+      "name": "page_2",
       "elements": [
         {
           "type": "rating",
-          "name": "question1",
+          "name": "question_1",
           "title": "I am someone who is outgoing, sociable",
-          "valueName": "value1",
+          "valueName": "value_1",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -41,13 +41,13 @@ export const json = {
 
 
     {
-      "name": "page3",
+      "name": "page_3",
       "elements": [
         {
           "type": "rating",
-          "name": "question2",
+          "name": "question_2",
           "title": "I am someone who is compassionate, has a soft heart",
-          "valueName": "value2",
+          "valueName": "value_2",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -64,13 +64,13 @@ export const json = {
 
 
     {
-      "name": "page4",
+      "name": "page_4",
       "elements": [
         {
           "type": "rating",
-          "name": "question3",
+          "name": "question_3",
           "title": "I am someone who tends to be disorganized",
-          "valueName": "value3",
+          "valueName": "value_3",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -87,13 +87,13 @@ export const json = {
 
 
     {
-      "name": "page5",
+      "name": "page_5",
       "elements": [
         {
           "type": "rating",
-          "name": "question4",
+          "name": "question_4",
           "title": "I am someone who is relaxed, handles stress well",
-          "valueName": "value4",
+          "valueName": "value_4",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -110,13 +110,13 @@ export const json = {
 
 
     {
-      "name": "page6",
+      "name": "page_6",
       "elements": [
         {
           "type": "rating",
-          "name": "question5",
+          "name": "question_5",
           "title": "I am someone who has few artistic interests",
-          "valueName": "value5",
+          "valueName": "value_5",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -133,13 +133,13 @@ export const json = {
 
 
     {
-      "name": "page7",
+      "name": "page_7",
       "elements": [
         {
           "type": "rating",
-          "name": "question6",
+          "name": "question_6",
           "title": "I am someone who has an assertive personality",
-          "valueName": "value6",
+          "valueName": "value_6",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -156,13 +156,13 @@ export const json = {
 
 
     {
-      "name": "page8",
+      "name": "page_8",
       "elements": [
         {
           "type": "rating",
-          "name": "question7",
+          "name": "question_7",
           "title": "I am someone who is respectful, treats others with respect",
-          "valueName": "value7",
+          "valueName": "value_7",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -179,13 +179,13 @@ export const json = {
 
 
     {
-      "name": "page9",
+      "name": "page_9",
       "elements": [
         {
           "type": "rating",
-          "name": "question8",
+          "name": "question_8",
           "title": "I am someone who tends to be lazy",
-          "valueName": "value8",
+          "valueName": "value_8",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -202,13 +202,13 @@ export const json = {
 
 
     {
-      "name": "page10",
+      "name": "page_10",
       "elements": [
         {
           "type": "rating",
-          "name": "question9",
+          "name": "question_9",
           "title": "I am someone who stays optimistic after experiencing a setback",
-          "valueName": "value9",
+          "valueName": "value_9",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -225,13 +225,13 @@ export const json = {
 
 
     {
-      "name": "page11",
+      "name": "page_11",
       "elements": [
         {
           "type": "rating",
-          "name": "question10",
+          "name": "question_10",
           "title": "I am someone who is curious about many different things",
-          "valueName": "value10",
+          "valueName": "value_10",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -248,13 +248,13 @@ export const json = {
 
 
     {
-      "name": "page12",
+      "name": "page_12",
       "elements": [
         {
           "type": "rating",
-          "name": "question11",
+          "name": "question_11",
           "title": "I am someone who rarely feels excited or eager",
-          "valueName": "value11",
+          "valueName": "value_11",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -271,13 +271,13 @@ export const json = {
 
 
     {
-      "name": "page13",
+      "name": "page_13",
       "elements": [
         {
           "type": "rating",
-          "name": "question12",
+          "name": "question_12",
           "title": "I am someone who tends to find fault with others",
-          "valueName": "value12",
+          "valueName": "value_12",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -294,11 +294,11 @@ export const json = {
 
 
     {
-      "name": "page14",
+      "name": "page_14",
       "elements": [
         {
           "type": "html",
-          "name": "instructions2",
+          "name": "instructions_2",
           "html": "<h3>Welcome to the first elaboration part of the questionnaire!</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
         }
       ],
@@ -307,12 +307,12 @@ export const json = {
 
 
     {
-      "name": "page15",
+      "name": "page_15",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration1",
-          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is outgoing, sociable:</b> <i>{value1}</i></p><p><b>I am someone who has an assertive personality:</b> <i>{value6}</i></p><p><b>I am someone who rarely feels excited or eager:</b> <i>{value11}</i></p>"
+          "name": "elaboration_1",
+          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is outgoing, sociable:</b> <i>{value_1}</i></p><p><b>I am someone who has an assertive personality:</b> <i>{value_6}</i></p><p><b>I am someone who rarely feels excited or eager:</b> <i>{value_11}</i></p>"
         }
       ],
       "readOnly": true
@@ -320,13 +320,13 @@ export const json = {
 
 
     {
-      "name": "page16",
+      "name": "page_16",
       "elements": [
         {
           "type": "rating",
-          "name": "question13",
+          "name": "question_13",
           "title": "I am someone who is dependable, steady",
-          "valueName": "value13",
+          "valueName": "value_13",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -343,13 +343,13 @@ export const json = {
 
 
     {
-      "name": "page17",
+      "name": "page_17",
       "elements": [
         {
           "type": "rating",
-          "name": "question14",
+          "name": "question_14",
           "title": "I am someone who is moody, has up and down mood swings",
-          "valueName": "value14",
+          "valueName": "value_14",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -366,13 +366,13 @@ export const json = {
 
 
     {
-      "name": "page18",
+      "name": "page_18",
       "elements": [
         {
           "type": "rating",
-          "name": "question15",
+          "name": "question_15",
           "title": "I am someone who is inventive, finds clever ways to do things",
-          "valueName": "value15",
+          "valueName": "value_15",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -389,13 +389,13 @@ export const json = {
 
 
     {
-      "name": "page19",
+      "name": "page_19",
       "elements": [
         {
           "type": "rating",
-          "name": "question16",
+          "name": "question_16",
           "title": "I am someone who tends to be quiet",
-          "valueName": "value16",
+          "valueName": "value_16",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -412,13 +412,13 @@ export const json = {
 
 
     {
-      "name": "page20",
+      "name": "page_20",
       "elements": [
         {
           "type": "rating",
-          "name": "question17",
+          "name": "question_17",
           "title": "I am someone who feels little sympathy for others",
-          "valueName": "value17",
+          "valueName": "value_17",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -435,13 +435,13 @@ export const json = {
 
 
     {
-      "name": "page21",
+      "name": "page_21",
       "elements": [
         {
           "type": "rating",
-          "name": "question18",
+          "name": "question_18",
           "title": "I am someone who is systematic, likes to keep things in order",
-          "valueName": "value18",
+          "valueName": "value_18",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -458,13 +458,13 @@ export const json = {
 
 
     {
-      "name": "page22",
+      "name": "page_22",
       "elements": [
         {
           "type": "rating",
-          "name": "question19",
+          "name": "question_19",
           "title": "I am someone who can be tense",
-          "valueName": "value19",
+          "valueName": "value_19",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -481,13 +481,13 @@ export const json = {
 
 
     {
-      "name": "page23",
+      "name": "page_23",
       "elements": [
         {
           "type": "rating",
-          "name": "question20",
+          "name": "question_20",
           "title": "I am someone who is fascinated by art, music, or literature",
-          "valueName": "value20",
+          "valueName": "value_20",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -504,13 +504,13 @@ export const json = {
 
 
     {
-      "name": "page24",
+      "name": "page_24",
       "elements": [
         {
           "type": "rating",
-          "name": "question21",
+          "name": "question_21",
           "title": "I am someone who is dominant, acts as a leader",
-          "valueName": "value21",
+          "valueName": "value_21",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -527,13 +527,13 @@ export const json = {
 
 
     {
-      "name": "page25",
+      "name": "page_25",
       "elements": [
         {
           "type": "rating",
-          "name": "question22",
+          "name": "question_22",
           "title": "I am someone who starts arguments with others",
-          "valueName": "value22",
+          "valueName": "value_22",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -550,13 +550,13 @@ export const json = {
 
 
     {
-      "name": "page26",
+      "name": "page_26",
       "elements": [
         {
           "type": "rating",
-          "name": "question23",
+          "name": "question_23",
           "title": "I am someone who has difficulty getting started on tasks",
-          "valueName": "value23",
+          "valueName": "value_23",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -573,13 +573,13 @@ export const json = {
 
 
     {
-      "name": "page27",
+      "name": "page_27",
       "elements": [
         {
           "type": "rating",
-          "name": "question24",
+          "name": "question_24",
           "title": "I am someone who feels secure, comfortable with self",
-          "valueName": "value24",
+          "valueName": "value_24",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -596,11 +596,11 @@ export const json = {
 
 
     {
-      "name": "page28",
+      "name": "page_28",
       "elements": [
         {
           "type": "html",
-          "name": "instructions3",
+          "name": "instructions_3",
           "html": "<h3>Elaboration part 2</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
         }
       ],
@@ -609,12 +609,12 @@ export const json = {
 
 
     {
-      "name": "page29",
+      "name": "page_29",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration2",
-          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is dependable, steady:</b> <i>{value13}</i></p><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value18}</i></p><p><b>I am someone who has difficulty getting started on tasks:</b> <i>{value23}</i></p>"
+          "name": "elaboration_2",
+          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is dependable, steady:</b> <i>{value_13}</i></p><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value_18}</i></p><p><b>I am someone who has difficulty getting started on tasks:</b> <i>{value_23}</i></p>"
         }
       ],
       "readOnly": true
@@ -622,13 +622,13 @@ export const json = {
 
 
     {
-      "name": "page30",
+      "name": "page_30",
       "elements": [
         {
           "type": "rating",
-          "name": "question25",
+          "name": "question_25",
           "title": "I am someone who avoids intellectual, philosophical discussions",
-          "valueName": "value25",
+          "valueName": "value_25",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -645,13 +645,13 @@ export const json = {
 
 
     {
-      "name": "page31",
+      "name": "page_31",
       "elements": [
         {
           "type": "rating",
-          "name": "question26",
+          "name": "question_26",
           "title": "I am someone who is less active than other people",
-          "valueName": "value26",
+          "valueName": "value_26",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -668,13 +668,13 @@ export const json = {
 
 
     {
-      "name": "page32",
+      "name": "page_32",
       "elements": [
         {
           "type": "rating",
-          "name": "question27",
+          "name": "question_27",
           "title": "I am someone who has a forgiving nature",
-          "valueName": "value27",
+          "valueName": "value_27",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -691,13 +691,13 @@ export const json = {
 
 
     {
-      "name": "page33",
+      "name": "page_33",
       "elements": [
         {
           "type": "rating",
-          "name": "question28",
+          "name": "question_28",
           "title": "I am someone who can be somewhat careless",
-          "valueName": "value28",
+          "valueName": "value_28",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -714,13 +714,13 @@ export const json = {
 
 
     {
-      "name": "page34",
+      "name": "page_34",
       "elements": [
         {
           "type": "rating",
-          "name": "question29",
+          "name": "question_29",
           "title": "I am someone who is emotionally stable, not easily upset",
-          "valueName": "value29",
+          "valueName": "value_29",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -737,13 +737,13 @@ export const json = {
 
 
     {
-      "name": "page35",
+      "name": "page_35",
       "elements": [
         {
           "type": "rating",
-          "name": "question30",
+          "name": "question_30",
           "title": "I am someone who has little creativity",
-          "valueName": "value30",
+          "valueName": "value_30",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -760,13 +760,13 @@ export const json = {
 
 
     {
-      "name": "page36",
+      "name": "page_36",
       "elements": [
         {
           "type": "rating",
-          "name": "question31",
+          "name": "question_31",
           "title": "I am someone who is sometimes shy, introverted",
-          "valueName": "value31",
+          "valueName": "value_31",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -783,13 +783,13 @@ export const json = {
 
 
     {
-      "name": "page37",
+      "name": "page_37",
       "elements": [
         {
           "type": "rating",
-          "name": "question32",
+          "name": "question_32",
           "title": "I am someone who is helpful and unselfish with others",
-          "valueName": "value32",
+          "valueName": "value_32",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -806,13 +806,13 @@ export const json = {
 
 
     {
-      "name": "page38",
+      "name": "page_38",
       "elements": [
         {
           "type": "rating",
-          "name": "question33",
+          "name": "question_33",
           "title": "I am someone who keeps things neat and tidy",
-          "valueName": "value33",
+          "valueName": "value_33",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -829,13 +829,13 @@ export const json = {
 
 
     {
-      "name": "page39",
+      "name": "page_39",
       "elements": [
         {
           "type": "rating",
-          "name": "question34",
+          "name": "question_34",
           "title": "I am someone who worries a lot",
-          "valueName": "value34",
+          "valueName": "value_34",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -852,13 +852,13 @@ export const json = {
 
 
     {
-      "name": "page40",
+      "name": "page_40",
       "elements": [
         {
           "type": "rating",
-          "name": "question35",
+          "name": "question_35",
           "title": "I am someone who values art and beauty",
-          "valueName": "value35",
+          "valueName": "value_35",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -875,13 +875,13 @@ export const json = {
 
 
     {
-      "name": "page41",
+      "name": "page_41",
       "elements": [
         {
           "type": "rating",
-          "name": "question36",
+          "name": "question_36",
           "title": "I am someone who finds it hard to influence people",
-          "valueName": "value36",
+          "valueName": "value_36",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -898,11 +898,11 @@ export const json = {
 
 
     {
-      "name": "page42",
+      "name": "page_42",
       "elements": [
         {
           "type": "html",
-          "name": "instructions4",
+          "name": "instructions_4",
           "html": "<h3>Elaboration part 3</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
         }
       ],
@@ -911,12 +911,12 @@ export const json = {
 
 
     {
-      "name": "page43",
+      "name": "page_43",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration3",
-          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who avoids intellectual, philosophical discussions:</b> <i>{value25}</i></p><p><b>I am someone who has little creativity:</b> <i>{value30}</i></p><p><b>I am someone who values art and beauty:</b> <i>{value35}</i></p>"
+          "name": "elaboration_3",
+          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who avoids intellectual, philosophical discussions:</b> <i>{value_25}</i></p><p><b>I am someone who has little creativity:</b> <i>{value_30}</i></p><p><b>I am someone who values art and beauty:</b> <i>{value_35}</i></p>"
         }
       ],
       "readOnly": true
@@ -924,13 +924,13 @@ export const json = {
 
 
     {
-      "name": "page44",
+      "name": "page_44",
       "elements": [
         {
           "type": "rating",
-          "name": "question37",
+          "name": "question_37",
           "title": "I am someone who is sometimes rude to others",
-          "valueName": "value37",
+          "valueName": "value_37",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -947,13 +947,13 @@ export const json = {
 
 
     {
-      "name": "page45",
+      "name": "page_45",
       "elements": [
         {
           "type": "rating",
-          "name": "question38",
+          "name": "question_38",
           "title": "I am someone who is efficient, gets things done",
-          "valueName": "value38",
+          "valueName": "value_38",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -970,13 +970,13 @@ export const json = {
 
 
     {
-      "name": "page46",
+      "name": "page_46",
       "elements": [
         {
           "type": "rating",
-          "name": "question39",
+          "name": "question_39",
           "title": "I am someone who often feels sad",
-          "valueName": "value39",
+          "valueName": "value_39",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -993,13 +993,13 @@ export const json = {
 
 
     {
-      "name": "page47",
+      "name": "page_47",
       "elements": [
         {
           "type": "rating",
-          "name": "question40",
+          "name": "question_40",
           "title": "I am someone who is complex, a deep thinker",
-          "valueName": "value40",
+          "valueName": "value_40",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1016,13 +1016,13 @@ export const json = {
 
 
     {
-      "name": "page48",
+      "name": "page_48",
       "elements": [
         {
           "type": "rating",
-          "name": "question41",
+          "name": "question_41",
           "title": "I am someone who is full of energy",
-          "valueName": "value41",
+          "valueName": "value_41",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1039,13 +1039,13 @@ export const json = {
 
 
     {
-      "name": "page49",
+      "name": "page_49",
       "elements": [
         {
           "type": "rating",
-          "name": "question42",
+          "name": "question_42",
           "title": "I am someone who is suspicious of others’ intentions",
-          "valueName": "value42",
+          "valueName": "value_42",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1062,13 +1062,13 @@ export const json = {
 
 
     {
-      "name": "page50",
+      "name": "page_50",
       "elements": [
         {
           "type": "rating",
-          "name": "question43",
+          "name": "question_43",
           "title": "I am someone who is reliable, can always be counted on",
-          "valueName": "value43",
+          "valueName": "value_43",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1085,13 +1085,13 @@ export const json = {
 
 
     {
-      "name": "page51",
+      "name": "page_51",
       "elements": [
         {
           "type": "rating",
-          "name": "question44",
+          "name": "question_44",
           "title": "I am someone who keeps their emotions under control",
-          "valueName": "value44",
+          "valueName": "value_44",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1108,13 +1108,13 @@ export const json = {
 
 
     {
-      "name": "page52",
+      "name": "page_52",
       "elements": [
         {
           "type": "rating",
-          "name": "question45",
+          "name": "question_45",
           "title": "I am someone who has difficulty imagining things",
-          "valueName": "value45",
+          "valueName": "value_45",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1131,13 +1131,13 @@ export const json = {
 
 
     {
-      "name": "page53",
+      "name": "page_53",
       "elements": [
         {
           "type": "rating",
-          "name": "question46",
+          "name": "question_46",
           "title": "I am someone who is talkative",
-          "valueName": "value46",
+          "valueName": "value_46",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1154,13 +1154,13 @@ export const json = {
 
 
     {
-      "name": "page54",
+      "name": "page_54",
       "elements": [
         {
           "type": "rating",
-          "name": "question47",
+          "name": "question_47",
           "title": "I am someone who can be cold and uncaring",
-          "valueName": "value47",
+          "valueName": "value_47",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1177,13 +1177,13 @@ export const json = {
 
 
     {
-      "name": "page55",
+      "name": "page_55",
       "elements": [
         {
           "type": "rating",
-          "name": "question48",
+          "name": "question_48",
           "title": "I am someone who leaves a mess, doesn’t clean up",
-          "valueName": "value48",
+          "valueName": "value_48",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1200,11 +1200,11 @@ export const json = {
 
 
     {
-      "name": "page56",
+      "name": "page_56",
       "elements": [
         {
           "type": "html",
-          "name": "instructions5",
+          "name": "instructions_5",
           "html": "<h3>Elaboration part 4</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
         }
       ],
@@ -1213,12 +1213,12 @@ export const json = {
 
 
     {
-      "name": "page57",
+      "name": "page_57",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration4",
-          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value37}</i></p><p><b>I am someone who is suspicious of others’ intentions:</b> <i>{value42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value47}</i></p>"
+          "name": "elaboration_4",
+          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value_37}</i></p><p><b>I am someone who is suspicious of others’ intentions:</b> <i>{value_42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value_47}</i></p>"
         }
       ],
       "readOnly": true
@@ -1226,13 +1226,13 @@ export const json = {
 
 
     {
-      "name": "page58",
+      "name": "page_58",
       "elements": [
         {
           "type": "rating",
-          "name": "question49",
+          "name": "question_49",
           "title": "I am someone who rarely feels anxious or afraid",
-          "valueName": "value49",
+          "valueName": "value_49",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1249,13 +1249,13 @@ export const json = {
 
 
     {
-      "name": "page59",
+      "name": "page_59",
       "elements": [
         {
           "type": "rating",
-          "name": "question50",
+          "name": "question_50",
           "title": "I am someone who thinks poetry and plays are boring",
-          "valueName": "value50",
+          "valueName": "value_50",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1272,13 +1272,13 @@ export const json = {
 
 
     {
-      "name": "page60",
+      "name": "page_60",
       "elements": [
         {
           "type": "rating",
-          "name": "question51",
+          "name": "question_51",
           "title": "I am someone who prefers to have others take charge",
-          "valueName": "value51",
+          "valueName": "value_51",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1295,13 +1295,13 @@ export const json = {
 
 
     {
-      "name": "page61",
+      "name": "page_61",
       "elements": [
         {
           "type": "rating",
-          "name": "question52",
+          "name": "question_52",
           "title": "I am someone who is polite, courteous to others",
-          "valueName": "value52",
+          "valueName": "value_52",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1318,13 +1318,13 @@ export const json = {
 
 
     {
-      "name": "page62",
+      "name": "page_62",
       "elements": [
         {
           "type": "rating",
-          "name": "question53",
+          "name": "question_53",
           "title": "I am someone who is persistent, works until the task is finished",
-          "valueName": "value53",
+          "valueName": "value_53",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1341,13 +1341,13 @@ export const json = {
 
 
     {
-      "name": "page63",
+      "name": "page_63",
       "elements": [
         {
           "type": "rating",
-          "name": "question54",
+          "name": "question_54",
           "title": "I am someone who tends to feel depressed, blue",
-          "valueName": "value54",
+          "valueName": "value_54",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1364,13 +1364,13 @@ export const json = {
 
 
     {
-      "name": "page64",
+      "name": "page_64",
       "elements": [
         {
           "type": "rating",
-          "name": "question55",
+          "name": "question_55",
           "title": "I am someone who has little interest in abstract ideas",
-          "valueName": "value55",
+          "valueName": "value_55",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1387,13 +1387,13 @@ export const json = {
 
 
     {
-      "name": "page65",
+      "name": "page_65",
       "elements": [
         {
           "type": "rating",
-          "name": "question56",
+          "name": "question_56",
           "title": "I am someone who shows a lot of enthusiasm",
-          "valueName": "value56",
+          "valueName": "value_56",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1410,13 +1410,13 @@ export const json = {
 
 
     {
-      "name": "page66",
+      "name": "page_66",
       "elements": [
         {
           "type": "rating",
-          "name": "question57",
+          "name": "question_57",
           "title": "I am someone who assumes the best about people",
-          "valueName": "value57",
+          "valueName": "value_57",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1433,13 +1433,13 @@ export const json = {
 
 
     {
-      "name": "page67",
+      "name": "page_67",
       "elements": [
         {
           "type": "rating",
-          "name": "question58",
+          "name": "question_58",
           "title": "I am someone who sometimes behaves irresponsibly",
-          "valueName": "value58",
+          "valueName": "value_58",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1456,13 +1456,13 @@ export const json = {
 
 
     {
-      "name": "page68",
+      "name": "page_68",
       "elements": [
         {
           "type": "rating",
-          "name": "question59",
+          "name": "question_59",
           "title": "I am someone who is temperamental, gets emotional easily",
-          "valueName": "value59",
+          "valueName": "value_59",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1479,13 +1479,13 @@ export const json = {
 
 
     {
-      "name": "page69",
+      "name": "page_69",
       "elements": [
         {
           "type": "rating",
-          "name": "question60",
+          "name": "question_60",
           "title": "I am someone who is original, comes up with new ideas",
-          "valueName": "value60",
+          "valueName": "value_60",
           "isRequired": true,
           "autoGenerate": false,
           "rateValues": [
@@ -1502,11 +1502,11 @@ export const json = {
 
 
     {
-      "name": "page70",
+      "name": "page_70",
       "elements": [
         {
           "type": "html",
-          "name": "instructions6",
+          "name": "instructions_6",
           "html": "<h3>Elaboration part 5</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
         }
       ],
@@ -1515,12 +1515,12 @@ export const json = {
 
 
     {
-      "name": "page71",
+      "name": "page_71",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration5",
-          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who rarely feels anxious or afraid:</b> <i>{value49}</i></p><p><b>I am someone who tends to feel depressed, blue:</b> <i>{value54}</i></p><p><b>I am someone who is temperamental, gets emotional easily:</b> <i>{value59}</i></p>"
+          "name": "elaboration_5",
+          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who rarely feels anxious or afraid:</b> <i>{value_49}</i></p><p><b>I am someone who tends to feel depressed, blue:</b> <i>{value_54}</i></p><p><b>I am someone who is temperamental, gets emotional easily:</b> <i>{value_59}</i></p>"
         }
       ],
       "readOnly": true
@@ -1528,7 +1528,7 @@ export const json = {
 
 
     {
-      "name": "page72",
+      "name": "page_72",
       "elements": [
         {
           "type": "matrix",
@@ -1536,259 +1536,259 @@ export const json = {
           "isRequired": true,
           "columns": [
             {
-              "value": "Column 1",
+              "value": "lie_column",
               "text": "Lie"
             },
             {
-              "value": "Column 2",
+              "value": "half-truth_column",
               "text": "Half-truth"
             },
             {
-              "value": "Column 3",
+              "value": "truth_column",
               "text": "Truth"
             }
           ],
           "rows": [
 
             {
-              "value": 1,
-              "text": "I am someone who is outgoing, sociable: {value1}"
+              "value": "ground_truth_row_1",
+              "text": "I am someone who is outgoing, sociable: {value_1}"
             },
             {
-              "value": 2,
-              "text": "I am someone who is compassionate, has a soft heart: {value2}"
+              "value": "ground_truth_row_2",
+              "text": "I am someone who is compassionate, has a soft heart: {value_2}"
             },
             {
-              "value": 3,
-              "text": "I am someone who tends to be disorganized: {value3}"
+              "value": "ground_truth_row_3",
+              "text": "I am someone who tends to be disorganized: {value_3}"
             },
             {
-              "value": 4,
-              "text": "I am someone who is relaxed, handles stress well: {value4}"
+              "value": "ground_truth_row_4",
+              "text": "I am someone who is relaxed, handles stress well: {value_4}"
             },
             {
-              "value": 5,
-              "text": "I am someone who has few artistic interests: {value5}"
+              "value": "ground_truth_row_5",
+              "text": "I am someone who has few artistic interests: {value_5}"
             },
             {
-              "value": 6,
-              "text": "I am someone who has an assertive personality: {value6}"
+              "value": "ground_truth_row_6",
+              "text": "I am someone who has an assertive personality: {value_6}"
             },
             {
-              "value": 7,
-              "text": "I am someone who is respectful, treats others with respect: {value7}"
+              "value": "ground_truth_row_7",
+              "text": "I am someone who is respectful, treats others with respect: {value_7}"
             },
             {
-              "value": 8,
-              "text": "I am someone who tends to be lazy: {value8}"
+              "value": "ground_truth_row_8",
+              "text": "I am someone who tends to be lazy: {value_8}"
             },
             {
-              "value": 9,
-              "text": "I am someone who stays optimistic after experiencing a setback: {value9}"
+              "value": "ground_truth_row_9",
+              "text": "I am someone who stays optimistic after experiencing a setback: {value_9}"
             },
             {
-              "value": 10,
-              "text": "I am someone who is curious about many different things: {value10}"
+              "value": "ground_truth_row_10",
+              "text": "I am someone who is curious about many different things: {value_10}"
             },
             {
-              "value": 11,
-              "text": "I am someone who rarely feels excited or eager: {value11}"
+              "value": "ground_truth_row_11",
+              "text": "I am someone who rarely feels excited or eager: {value_11}"
             },
             {
-              "value": 12,
-              "text": "I am someone who tends to find fault with others: {value12}"
+              "value": "ground_truth_row_12",
+              "text": "I am someone who tends to find fault with others: {value_12}"
             },
             {
-              "value": 13,
-              "text": "I am someone who is dependable, steady: {value13}"
+              "value": "ground_truth_row_13",
+              "text": "I am someone who is dependable, steady: {value_13}"
             },
             {
-              "value": 14,
-              "text": "I am someone who is moody, has up and down mood swings: {value14}"
+              "value": "ground_truth_row_14",
+              "text": "I am someone who is moody, has up and down mood swings: {value_14}"
             },
             {
-              "value": 15,
-              "text": "I am someone who is inventive, finds clever ways to do things: {value15}"
+              "value": "ground_truth_row_15",
+              "text": "I am someone who is inventive, finds clever ways to do things: {value_15}"
             },
             {
-              "value": 16,
-              "text": "I am someone who tends to be quiet: {value16}"
+              "value": "ground_truth_row_16",
+              "text": "I am someone who tends to be quiet: {value_16}"
             },
             {
-              "value": 17,
-              "text": "I am someone who feels little sympathy for others: {value17}"
+              "value": "ground_truth_row_17",
+              "text": "I am someone who feels little sympathy for others: {value_17}"
             },
             {
-              "value": 18,
-              "text": "I am someone who is systematic, likes to keep things in order: {value18}"
+              "value": "ground_truth_row_18",
+              "text": "I am someone who is systematic, likes to keep things in order: {value_18}"
             },
             {
-              "value": 19,
-              "text": "I am someone who can be tense: {value19}"
+              "value": "ground_truth_row_19",
+              "text": "I am someone who can be tense: {value_19}"
             },
             {
-              "value": 20,
-              "text": "I am someone who is fascinated by art, music, or literature: {value20}"
+              "value": "ground_truth_row_20",
+              "text": "I am someone who is fascinated by art, music, or literature: {value_20}"
             },
             {
-              "value": 21,
-              "text": "I am someone who is dominant, acts as a leader: {value21}"
+              "value": "ground_truth_row_21",
+              "text": "I am someone who is dominant, acts as a leader: {value_21}"
             },
             {
-              "value": 22,
-              "text": "I am someone who starts arguments with others: {value22}"
+              "value": "ground_truth_row_22",
+              "text": "I am someone who starts arguments with others: {value_22}"
             },
             {
-              "value": 23,
-              "text": "I am someone who has difficulty getting started on tasks: {value23}"
+              "value": "ground_truth_row_23",
+              "text": "I am someone who has difficulty getting started on tasks: {value_23}"
             },
             {
-              "value": 24,
-              "text": "I am someone who feels secure, comfortable with self: {value24}"
+              "value": "ground_truth_row_24",
+              "text": "I am someone who feels secure, comfortable with self: {value_24}"
             },
             {
-              "value": 25,
-              "text": "I am someone who avoids intellectual, philosophical discussions: {value25}"
+              "value": "ground_truth_row_25",
+              "text": "I am someone who avoids intellectual, philosophical discussions: {value_25}"
             },
             {
-              "value": 26,
-              "text": "I am someone who is less active than other people: {value26}"
+              "value": "ground_truth_row_26",
+              "text": "I am someone who is less active than other people: {value_26}"
             },
             {
-              "value": 27,
-              "text": "I am someone who has a forgiving nature: {value27}"
+              "value": "ground_truth_row_27",
+              "text": "I am someone who has a forgiving nature: {value_27}"
             },
             {
-              "value": 28,
-              "text": "I am someone who can be somewhat careless: {value28}"
+              "value": "ground_truth_row_28",
+              "text": "I am someone who can be somewhat careless: {value_28}"
             },
             {
-              "value": 29,
-              "text": "I am someone who is emotionally stable, not easily upset: {value29}"
+              "value": "ground_truth_row_29",
+              "text": "I am someone who is emotionally stable, not easily upset: {value_29}"
             },
             {
-              "value": 30,
-              "text": "I am someone who has little creativity: {value30}"
+              "value": "ground_truth_row_30",
+              "text": "I am someone who has little creativity: {value_30}"
             },
             {
-              "value": 31,
-              "text": "I am someone who is sometimes shy, introverted: {value31}"
+              "value": "ground_truth_row_31",
+              "text": "I am someone who is sometimes shy, introverted: {value_31}"
             },
             {
-              "value": 32,
-              "text": "I am someone who is helpful and unselfish with others: {value32}"
+              "value": "ground_truth_row_32",
+              "text": "I am someone who is helpful and unselfish with others: {value_32}"
             },
             {
-              "value": 33,
-              "text": "I am someone who keeps things neat and tidy: {value33}"
+              "value": "ground_truth_row_33",
+              "text": "I am someone who keeps things neat and tidy: {value_33}"
             },
             {
-              "value": 34,
-              "text": "I am someone who worries a lot: {value34}"
+              "value": "ground_truth_row_34",
+              "text": "I am someone who worries a lot: {value_34}"
             },
             {
-              "value": 35,
-              "text": "I am someone who values art and beauty: {value35}"
+              "value": "ground_truth_row_35",
+              "text": "I am someone who values art and beauty: {value_35}"
             },
             {
-              "value": 36,
-              "text": "I am someone who finds it hard to influence people: {value36}"
+              "value": "ground_truth_row_36",
+              "text": "I am someone who finds it hard to influence people: {value_36}"
             },
             {
-              "value": 37,
-              "text": "I am someone who is sometimes rude to others: {value37}"
+              "value": "ground_truth_row_37",
+              "text": "I am someone who is sometimes rude to others: {value_37}"
             },
             {
-              "value": 38,
-              "text": "I am someone who is efficient, gets things done: {value38}"
+              "value": "ground_truth_row_38",
+              "text": "I am someone who is efficient, gets things done: {value_38}"
             },
             {
-              "value": 39,
-              "text": "I am someone who often feels sad: {value39}"
+              "value": "ground_truth_row_39",
+              "text": "I am someone who often feels sad: {value_39}"
             },
             {
-              "value": 40,
-              "text": "I am someone who is complex, a deep thinker: {value40}"
+              "value": "ground_truth_row_40",
+              "text": "I am someone who is complex, a deep thinker: {value_40}"
             },
             {
-              "value": 41,
-              "text": "I am someone who is full of energy: {value41}"
+              "value": "ground_truth_row_41",
+              "text": "I am someone who is full of energy: {value_41}"
             },
             {
-              "value": 42,
-              "text": "I am someone who is suspicious of others’ intentions: {value42}"
+              "value": "ground_truth_row_42",
+              "text": "I am someone who is suspicious of others’ intentions: {value_42}"
             },
             {
-              "value": 43,
-              "text": "I am someone who is reliable, can always be counted on: {value43}"
+              "value": "ground_truth_row_43",
+              "text": "I am someone who is reliable, can always be counted on: {value_43}"
             },
             {
-              "value": 44,
-              "text": "I am someone who keeps their emotions under control: {value44}"
+              "value": "ground_truth_row_44",
+              "text": "I am someone who keeps their emotions under control: {value_44}"
             },
             {
-              "value": 45,
-              "text": "I am someone who has difficulty imagining things: {value45}"
+              "value": "ground_truth_row_45",
+              "text": "I am someone who has difficulty imagining things: {value_45}"
             },
             {
-              "value": 46,
-              "text": "I am someone who is talkative: {value46}"
+              "value": "ground_truth_row_46",
+              "text": "I am someone who is talkative: {value_46}"
             },
             {
-              "value": 47,
-              "text": "I am someone who can be cold and uncaring: {value47}"
+              "value": "ground_truth_row_47",
+              "text": "I am someone who can be cold and uncaring: {value_47}"
             },
             {
-              "value": 48,
-              "text": "I am someone who leaves a mess, doesn’t clean up: {value48}"
+              "value": "ground_truth_row_48",
+              "text": "I am someone who leaves a mess, doesn’t clean up: {value_48}"
             },
             {
-              "value": 49,
-              "text": "I am someone who rarely feels anxious or afraid: {value49}"
+              "value": "ground_truth_row_49",
+              "text": "I am someone who rarely feels anxious or afraid: {value_49}"
             },
             {
-              "value": 50,
-              "text": "I am someone who thinks poetry and plays are boring: {value50}"
+              "value": "ground_truth_row_50",
+              "text": "I am someone who thinks poetry and plays are boring: {value_50}"
             },
             {
-              "value": 51,
-              "text": "I am someone who prefers to have others take charge: {value51}"
+              "value": "ground_truth_row_51",
+              "text": "I am someone who prefers to have others take charge: {value_51}"
             },
             {
-              "value": 52,
-              "text": "I am someone who is polite, courteous to others: {value52}"
+              "value": "ground_truth_row_52",
+              "text": "I am someone who is polite, courteous to others: {value_52}"
             },
             {
-              "value": 53,
-              "text": "I am someone who is persistent, works until the task is finished: {value53}"
+              "value": "ground_truth_row_53",
+              "text": "I am someone who is persistent, works until the task is finished: {value_53}"
             },
             {
-              "value": 54,
-              "text": "I am someone who tends to feel depressed, blue: {value54}"
+              "value": "ground_truth_row_54",
+              "text": "I am someone who tends to feel depressed, blue: {value_54}"
             },
             {
-              "value": 55,
-              "text": "I am someone who has little interest in abstract ideas: {value55}"
+              "value": "ground_truth_row_55",
+              "text": "I am someone who has little interest in abstract ideas: {value_55}"
             },
             {
-              "value": 56,
-              "text": "I am someone who shows a lot of enthusiasm: {value56}"
+              "value": "ground_truth_row_56",
+              "text": "I am someone who shows a lot of enthusiasm: {value_56}"
             },
             {
-              "value": 57,
-              "text": "I am someone who assumes the best about people: {value57}"
+              "value": "ground_truth_row_57",
+              "text": "I am someone who assumes the best about people: {value_57}"
             },
             {
-              "value": 58,
-              "text": "I am someone who sometimes behaves irresponsibly: {value58}"
+              "value": "ground_truth_row_58",
+              "text": "I am someone who sometimes behaves irresponsibly: {value_58}"
             },
             {
-              "value": 59,
-              "text": "I am someone who is temperamental, gets emotional easily: {value59}"
+              "value": "ground_truth_row_59",
+              "text": "I am someone who is temperamental, gets emotional easily: {value_59}"
             },
             {
-              "value": 60,
-              "text": "I am someone who is original, comes up with new ideas: {value60}"
+              "value": "ground_truth_row_60",
+              "text": "I am someone who is original, comes up with new ideas: {value_60}"
             },
           ],
           "isAllRowRequired": true
