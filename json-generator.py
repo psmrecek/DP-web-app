@@ -112,13 +112,13 @@ instructions_string = '''
     }},
     '''
 
-feedback_string = '''
+elaboration_string = '''
     {{
       "name": {page_name},
       "elements": [
         {{
           "type": "html",
-          "name": {feedback_name},
+          "name": {elaboration_name},
           "html": "<h3>{header}</h3><br><p><b>{q1}:</b> <i>{{{v1}}}</i></p><p><b>{q2}:</b> <i>{{{v2}}}</i></p><p><b>{q3}:</b> <i>{{{v3}}}</i></p>"
         }}
       ],
@@ -167,7 +167,7 @@ row_string = '''
 page_counter = 1
 instructions_counter = 1
 question_counter = 1
-feedback_counter = 1
+elaboration_counter = 1
 rows = ''
 
 for i in range(1, 61):
@@ -193,9 +193,9 @@ for i in range(1, 61):
         index1 = i - 11
         index2 = i - 6
         index3 = i - 1
-        print(feedback_string.format(page_name='"page'+str(page_counter)+'"', feedback_name='"feedback'+str(feedback_counter)+'"', header=header, q1=questions[index1 - 1], q2=questions[index2 - 1], q3=questions[index3 - 1], v1='value'+str(index1), v2='value'+str(index2), v3='value'+str(index3)))
+        print(elaboration_string.format(page_name='"page'+str(page_counter)+'"', elaboration_name='"elaboration'+str(elaboration_counter)+'"', header=header, q1=questions[index1 - 1], q2=questions[index2 - 1], q3=questions[index3 - 1], v1='value'+str(index1), v2='value'+str(index2), v3='value'+str(index3)))
         page_counter += 1
-        feedback_counter += 1
+        elaboration_counter += 1
 
     if i % 60 == 0:
         print(matrix_string.format(page_name='"page'+str(page_counter)+'"', rows=rows))

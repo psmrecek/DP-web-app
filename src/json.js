@@ -15,7 +15,7 @@ export const json = {
         }
       ]
     },
-
+    
 
     {
       "name": "page2",
@@ -311,7 +311,7 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "feedback1",
+          "name": "elaboration1",
           "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is outgoing, sociable:</b> <i>{value1}</i></p><p><b>I am someone who has an assertive personality:</b> <i>{value6}</i></p><p><b>I am someone who rarely feels excited or eager:</b> <i>{value11}</i></p>"
         }
       ],
@@ -613,7 +613,7 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "feedback2",
+          "name": "elaboration2",
           "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is dependable, steady:</b> <i>{value13}</i></p><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value18}</i></p><p><b>I am someone who has difficulty getting started on tasks:</b> <i>{value23}</i></p>"
         }
       ],
@@ -915,7 +915,7 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "feedback3",
+          "name": "elaboration3",
           "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who avoids intellectual, philosophical discussions:</b> <i>{value25}</i></p><p><b>I am someone who has little creativity:</b> <i>{value30}</i></p><p><b>I am someone who values art and beauty:</b> <i>{value35}</i></p>"
         }
       ],
@@ -1217,7 +1217,7 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "feedback4",
+          "name": "elaboration4",
           "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value37}</i></p><p><b>I am someone who is suspicious of others’ intentions:</b> <i>{value42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value47}</i></p>"
         }
       ],
@@ -1519,7 +1519,7 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "feedback5",
+          "name": "elaboration5",
           "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who rarely feels anxious or afraid:</b> <i>{value49}</i></p><p><b>I am someone who tends to feel depressed, blue:</b> <i>{value54}</i></p><p><b>I am someone who is temperamental, gets emotional easily:</b> <i>{value59}</i></p>"
         }
       ],
