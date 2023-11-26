@@ -1824,10 +1824,11 @@ export const json = {
       ]
     },
   ],
+  "sendResultOnPageNext": true,
   "showPageTitles": false,
   "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
   "showProgressBar": "top",
-  "progressBarType": "questions",
+  "progressBarType": "pages",
   // "firstPageIsStarted": true,
   "showTimerPanel": "bottom",
   "widthMode": "static",
