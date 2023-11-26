@@ -3,7 +3,7 @@ export const json = {
   // "description": "Chill Insights, Solid Results",
   // "logo": "Logo.png",
   // "logoPosition": "right",
-  "completedHtml": "<h2>Thank you for completing the survey</h2>",
+  "completedHtml": "<h4>&nbsp;&nbsp;Thank you for completing the survey</h4>",
   "pages": [
     {
       "name": "page_1",
@@ -316,7 +316,9 @@ export const json = {
           "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is outgoing, sociable:</b> <i>{value_1}</i></p><p><b>I am someone who has an assertive personality:</b> <i>{value_6}</i></p><p><b>I am someone who rarely feels excited or eager:</b> <i>{value_11}</i></p>"
         }
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     },
 
 
@@ -618,7 +620,9 @@ export const json = {
           "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is dependable, steady:</b> <i>{value_13}</i></p><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value_18}</i></p><p><b>I am someone who has difficulty getting started on tasks:</b> <i>{value_23}</i></p>"
         }
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     },
 
 
@@ -920,7 +924,9 @@ export const json = {
           "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who avoids intellectual, philosophical discussions:</b> <i>{value_25}</i></p><p><b>I am someone who has little creativity:</b> <i>{value_30}</i></p><p><b>I am someone who values art and beauty:</b> <i>{value_35}</i></p>"
         }
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     },
 
 
@@ -1222,7 +1228,9 @@ export const json = {
           "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value_37}</i></p><p><b>I am someone who is suspicious of others' intentions:</b> <i>{value_42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value_47}</i></p>"
         }
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     },
 
 
@@ -1524,7 +1532,9 @@ export const json = {
           "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who rarely feels anxious or afraid:</b> <i>{value_49}</i></p><p><b>I am someone who tends to feel depressed, blue:</b> <i>{value_54}</i></p><p><b>I am someone who is temperamental, gets emotional easily:</b> <i>{value_59}</i></p>"
         }
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     },
 
 
@@ -1534,6 +1544,7 @@ export const json = {
         {
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
+          "title": "Ground Truth",
           "isRequired": true,
           "columns": [
             {
@@ -1812,7 +1823,6 @@ export const json = {
         }
       ]
     },
-
   ],
   "showPageTitles": false,
   "navigateToUrl": "https://www.fiit.stuba.sk/en.html",

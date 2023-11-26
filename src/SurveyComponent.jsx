@@ -19,7 +19,6 @@ function SurveyComponent() {
             let row_value = ground_truth_matrix.getRowValue(i);
             ground_truth_matrix.setRowValue(i, { "answer_column": question_value, "ground_truth_column": row_value?.ground_truth_column });
         }
-        console.log(survey.data);
     });
 
     survey.onComplete.add((sender, options) => {

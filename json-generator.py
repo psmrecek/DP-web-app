@@ -122,7 +122,9 @@ elaboration_string = '''
           "html": "<h3>{header}</h3><br><p><b>{q1}:</b> <i>{{{v1}}}</i></p><p><b>{q2}:</b> <i>{{{v2}}}</i></p><p><b>{q3}:</b> <i>{{{v3}}}</i></p>"
         }}
       ],
-      "readOnly": true
+      "readOnly": true,
+      // "navigationButtonsVisibility": "hide",
+      // "maxTimeToFinish": 20
     }},
     '''
 
@@ -133,6 +135,7 @@ matrix_string = '''
         {{
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
+          "title": "Ground Truth",
           "isRequired": true,
           "columns": [
             {{
