@@ -12,7 +12,7 @@ export const json = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/dOtlQJh5T4w?si=zJwgtkFp3JixN-ou\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ybol83PzV9Q?si=fQKmSZQAn2v95wVd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ]
     },
@@ -300,7 +300,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Welcome to the first elaboration part of the questionnaire!</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>Elaboration part 1</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/InsT8EEwczc?si=7r3A40k_yqnVH2w5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ],
       "readOnly": true
