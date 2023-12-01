@@ -1825,6 +1825,7 @@ export const json = {
     },
   ],
   "sendResultOnPageNext": true,
+  "showPrevButton": false,
   "showPageTitles": false,
   "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
   "showProgressBar": "top",

@@ -28,9 +28,12 @@
     flex-wrap: wrap !important;
     align-items: stretch !important;
     padding-bottom: calc((144px - 46px) / 2);
+    width: 100%;
 }
 
 .sd-body.sd-body--static .sd-body__navigation.sd-action-bar {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+    width: 100%;
 }
