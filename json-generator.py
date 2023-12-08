@@ -6,7 +6,7 @@ first_page = '''
           "type": "html",
           "name": {instructions_name},
           "state": "expanded",
-          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"https://www.youtube.com/embed/dOtlQJh5T4w?si=zJwgtkFp3JixN-ou\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"https://www.youtube.com/embed/ybol83PzV9Q?si=fQKmSZQAn2v95wVd\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ]
     }},
@@ -105,7 +105,7 @@ instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>{header}</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }}
       ],
       "readOnly": true
@@ -119,12 +119,26 @@ elaboration_string = '''
         {{
           "type": "html",
           "name": {elaboration_name},
-          "html": "<h3>{header}</h3><br><p><b>{q1}:</b> <i>{{{v1}}}</i></p><p><b>{q2}:</b> <i>{{{v2}}}</i></p><p><b>{q3}:</b> <i>{{{v3}}}</i></p>"
+          "html": "<h3>{header}</h3><br><p><b>{q1}:</b> <i>{{{v1}}}</i></p>"
         }}
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    }},
+    '''
+
+elaboration_timeout_string = '''
+    {{
+      "name": {page_name},
+      "elements": [
+        {{
+          "type": "html",
+          "name": {elaboration_name},
+          "html": "<h3>{header}</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }}
+      ],
+      "readOnly": true,
     }},
     '''
 
@@ -188,6 +202,9 @@ instructions_counter = 1
 question_counter = 1
 elaboration_counter = 1
 rows = ''
+elaboration_question_index = 0
+
+elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
 for i in range(1, 61):
     if i == 1:
@@ -213,12 +230,25 @@ for i in range(1, 61):
               instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header))
         page_counter += 1
         instructions_counter += 1
-        index1 = i - 11
-        index2 = i - 6
-        index3 = i - 1
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'"', header=header,
-              q1=questions[index1 - 1], q2=questions[index2 - 1], q3=questions[index3 - 1], v1='value_'+str(index1), v2='value_'+str(index2), v3='value_'+str(index3)))
+
+        q1_index = elaboration_questions_indices[elaboration_question_index]
+        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', header=header,
+              q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
         page_counter += 1
+        elaboration_question_index += 1
+
+        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_1"', header=header))
+        page_counter += 1
+
+        q1_index = elaboration_questions_indices[elaboration_question_index]
+        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', header=header,
+              q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
+        page_counter += 1
+        elaboration_question_index += 1
+
+        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=header))
+        page_counter += 1
+
         elaboration_counter += 1
 
     if i % 60 == 0:

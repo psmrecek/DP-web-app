@@ -300,7 +300,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Elaboration part 1</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/InsT8EEwczc?si=7r3A40k_yqnVH2w5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<h3>Welcome to the first elaboration part of the questionnaire!</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }
       ],
       "readOnly": true
@@ -312,18 +312,59 @@ export const json = {
       "elements": [
         {
           "type": "html",
-          "name": "elaboration_1",
-          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is outgoing, sociable:</b> <i>{value_1}</i></p><p><b>I am someone who has an assertive personality:</b> <i>{value_6}</i></p><p><b>I am someone who rarely feels excited or eager:</b> <i>{value_11}</i></p>"
+          "name": "elaboration_1_1",
+          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is relaxed, handles stress well:</b> <i>{value_4}</i></p>"
         }
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
     },
 
 
     {
       "name": "page_16",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_1_1",
+          "html": "<h3>Elaboration part 1</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_17",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_1_2",
+          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who tends to be lazy:</b> <i>{value_8}</i></p>"
+        }
+      ],
+      "readOnly": true,
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    },
+
+
+    {
+      "name": "page_18",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_1_2",
+          "html": "<h3>Elaboration part 1</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_19",
       "elements": [
         {
           "type": "rating",
@@ -346,7 +387,7 @@ export const json = {
 
 
     {
-      "name": "page_17",
+      "name": "page_20",
       "elements": [
         {
           "type": "rating",
@@ -369,7 +410,7 @@ export const json = {
 
 
     {
-      "name": "page_18",
+      "name": "page_21",
       "elements": [
         {
           "type": "rating",
@@ -392,7 +433,7 @@ export const json = {
 
 
     {
-      "name": "page_19",
+      "name": "page_22",
       "elements": [
         {
           "type": "rating",
@@ -415,7 +456,7 @@ export const json = {
 
 
     {
-      "name": "page_20",
+      "name": "page_23",
       "elements": [
         {
           "type": "rating",
@@ -438,7 +479,7 @@ export const json = {
 
 
     {
-      "name": "page_21",
+      "name": "page_24",
       "elements": [
         {
           "type": "rating",
@@ -461,7 +502,7 @@ export const json = {
 
 
     {
-      "name": "page_22",
+      "name": "page_25",
       "elements": [
         {
           "type": "rating",
@@ -484,7 +525,7 @@ export const json = {
 
 
     {
-      "name": "page_23",
+      "name": "page_26",
       "elements": [
         {
           "type": "rating",
@@ -507,7 +548,7 @@ export const json = {
 
 
     {
-      "name": "page_24",
+      "name": "page_27",
       "elements": [
         {
           "type": "rating",
@@ -530,7 +571,7 @@ export const json = {
 
 
     {
-      "name": "page_25",
+      "name": "page_28",
       "elements": [
         {
           "type": "rating",
@@ -553,7 +594,7 @@ export const json = {
 
 
     {
-      "name": "page_26",
+      "name": "page_29",
       "elements": [
         {
           "type": "rating",
@@ -576,7 +617,7 @@ export const json = {
 
 
     {
-      "name": "page_27",
+      "name": "page_30",
       "elements": [
         {
           "type": "rating",
@@ -599,12 +640,12 @@ export const json = {
 
 
     {
-      "name": "page_28",
+      "name": "page_31",
       "elements": [
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Elaboration part 2</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>Elaboration part 2</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }
       ],
       "readOnly": true
@@ -612,22 +653,63 @@ export const json = {
 
 
     {
-      "name": "page_29",
+      "name": "page_32",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration_2",
-          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is dependable, steady:</b> <i>{value_13}</i></p><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value_18}</i></p><p><b>I am someone who has difficulty getting started on tasks:</b> <i>{value_23}</i></p>"
+          "name": "elaboration_2_1",
+          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is inventive, finds clever ways to do things:</b> <i>{value_15}</i></p>"
         }
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
     },
 
 
     {
-      "name": "page_30",
+      "name": "page_33",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_2_1",
+          "html": "<h3>Elaboration part 2</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_34",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_2_2",
+          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value_18}</i></p>"
+        }
+      ],
+      "readOnly": true,
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    },
+
+
+    {
+      "name": "page_35",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_2_2",
+          "html": "<h3>Elaboration part 2</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_36",
       "elements": [
         {
           "type": "rating",
@@ -650,7 +732,7 @@ export const json = {
 
 
     {
-      "name": "page_31",
+      "name": "page_37",
       "elements": [
         {
           "type": "rating",
@@ -673,7 +755,7 @@ export const json = {
 
 
     {
-      "name": "page_32",
+      "name": "page_38",
       "elements": [
         {
           "type": "rating",
@@ -696,7 +778,7 @@ export const json = {
 
 
     {
-      "name": "page_33",
+      "name": "page_39",
       "elements": [
         {
           "type": "rating",
@@ -719,7 +801,7 @@ export const json = {
 
 
     {
-      "name": "page_34",
+      "name": "page_40",
       "elements": [
         {
           "type": "rating",
@@ -742,7 +824,7 @@ export const json = {
 
 
     {
-      "name": "page_35",
+      "name": "page_41",
       "elements": [
         {
           "type": "rating",
@@ -765,7 +847,7 @@ export const json = {
 
 
     {
-      "name": "page_36",
+      "name": "page_42",
       "elements": [
         {
           "type": "rating",
@@ -788,7 +870,7 @@ export const json = {
 
 
     {
-      "name": "page_37",
+      "name": "page_43",
       "elements": [
         {
           "type": "rating",
@@ -811,7 +893,7 @@ export const json = {
 
 
     {
-      "name": "page_38",
+      "name": "page_44",
       "elements": [
         {
           "type": "rating",
@@ -834,7 +916,7 @@ export const json = {
 
 
     {
-      "name": "page_39",
+      "name": "page_45",
       "elements": [
         {
           "type": "rating",
@@ -857,7 +939,7 @@ export const json = {
 
 
     {
-      "name": "page_40",
+      "name": "page_46",
       "elements": [
         {
           "type": "rating",
@@ -880,7 +962,7 @@ export const json = {
 
 
     {
-      "name": "page_41",
+      "name": "page_47",
       "elements": [
         {
           "type": "rating",
@@ -903,12 +985,12 @@ export const json = {
 
 
     {
-      "name": "page_42",
+      "name": "page_48",
       "elements": [
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Elaboration part 3</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>Elaboration part 3</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }
       ],
       "readOnly": true
@@ -916,22 +998,63 @@ export const json = {
 
 
     {
-      "name": "page_43",
+      "name": "page_49",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration_3",
-          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who avoids intellectual, philosophical discussions:</b> <i>{value_25}</i></p><p><b>I am someone who has little creativity:</b> <i>{value_30}</i></p><p><b>I am someone who values art and beauty:</b> <i>{value_35}</i></p>"
+          "name": "elaboration_3_1",
+          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who has little creativity:</b> <i>{value_30}</i></p>"
         }
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
     },
 
 
     {
-      "name": "page_44",
+      "name": "page_50",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_3_1",
+          "html": "<h3>Elaboration part 3</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_51",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_3_2",
+          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who is helpful and unselfish with others:</b> <i>{value_32}</i></p>"
+        }
+      ],
+      "readOnly": true,
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    },
+
+
+    {
+      "name": "page_52",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_3_2",
+          "html": "<h3>Elaboration part 3</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_53",
       "elements": [
         {
           "type": "rating",
@@ -954,7 +1077,7 @@ export const json = {
 
 
     {
-      "name": "page_45",
+      "name": "page_54",
       "elements": [
         {
           "type": "rating",
@@ -977,7 +1100,7 @@ export const json = {
 
 
     {
-      "name": "page_46",
+      "name": "page_55",
       "elements": [
         {
           "type": "rating",
@@ -1000,7 +1123,7 @@ export const json = {
 
 
     {
-      "name": "page_47",
+      "name": "page_56",
       "elements": [
         {
           "type": "rating",
@@ -1023,7 +1146,7 @@ export const json = {
 
 
     {
-      "name": "page_48",
+      "name": "page_57",
       "elements": [
         {
           "type": "rating",
@@ -1046,7 +1169,7 @@ export const json = {
 
 
     {
-      "name": "page_49",
+      "name": "page_58",
       "elements": [
         {
           "type": "rating",
@@ -1069,7 +1192,7 @@ export const json = {
 
 
     {
-      "name": "page_50",
+      "name": "page_59",
       "elements": [
         {
           "type": "rating",
@@ -1092,7 +1215,7 @@ export const json = {
 
 
     {
-      "name": "page_51",
+      "name": "page_60",
       "elements": [
         {
           "type": "rating",
@@ -1115,7 +1238,7 @@ export const json = {
 
 
     {
-      "name": "page_52",
+      "name": "page_61",
       "elements": [
         {
           "type": "rating",
@@ -1138,7 +1261,7 @@ export const json = {
 
 
     {
-      "name": "page_53",
+      "name": "page_62",
       "elements": [
         {
           "type": "rating",
@@ -1161,7 +1284,7 @@ export const json = {
 
 
     {
-      "name": "page_54",
+      "name": "page_63",
       "elements": [
         {
           "type": "rating",
@@ -1184,7 +1307,7 @@ export const json = {
 
 
     {
-      "name": "page_55",
+      "name": "page_64",
       "elements": [
         {
           "type": "rating",
@@ -1207,12 +1330,12 @@ export const json = {
 
 
     {
-      "name": "page_56",
+      "name": "page_65",
       "elements": [
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Elaboration part 4</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>Elaboration part 4</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }
       ],
       "readOnly": true
@@ -1220,22 +1343,63 @@ export const json = {
 
 
     {
-      "name": "page_57",
+      "name": "page_66",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration_4",
-          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is sometimes rude to others:</b> <i>{value_37}</i></p><p><b>I am someone who is suspicious of others' intentions:</b> <i>{value_42}</i></p><p><b>I am someone who can be cold and uncaring:</b> <i>{value_47}</i></p>"
+          "name": "elaboration_4_1",
+          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who often feels sad:</b> <i>{value_39}</i></p>"
         }
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
     },
 
 
     {
-      "name": "page_58",
+      "name": "page_67",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_4_1",
+          "html": "<h3>Elaboration part 4</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_68",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_4_2",
+          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is full of energy:</b> <i>{value_41}</i></p>"
+        }
+      ],
+      "readOnly": true,
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    },
+
+
+    {
+      "name": "page_69",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_4_2",
+          "html": "<h3>Elaboration part 4</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_70",
       "elements": [
         {
           "type": "rating",
@@ -1258,7 +1422,7 @@ export const json = {
 
 
     {
-      "name": "page_59",
+      "name": "page_71",
       "elements": [
         {
           "type": "rating",
@@ -1281,7 +1445,7 @@ export const json = {
 
 
     {
-      "name": "page_60",
+      "name": "page_72",
       "elements": [
         {
           "type": "rating",
@@ -1304,7 +1468,7 @@ export const json = {
 
 
     {
-      "name": "page_61",
+      "name": "page_73",
       "elements": [
         {
           "type": "rating",
@@ -1327,7 +1491,7 @@ export const json = {
 
 
     {
-      "name": "page_62",
+      "name": "page_74",
       "elements": [
         {
           "type": "rating",
@@ -1350,7 +1514,7 @@ export const json = {
 
 
     {
-      "name": "page_63",
+      "name": "page_75",
       "elements": [
         {
           "type": "rating",
@@ -1373,7 +1537,7 @@ export const json = {
 
 
     {
-      "name": "page_64",
+      "name": "page_76",
       "elements": [
         {
           "type": "rating",
@@ -1396,7 +1560,7 @@ export const json = {
 
 
     {
-      "name": "page_65",
+      "name": "page_77",
       "elements": [
         {
           "type": "rating",
@@ -1419,7 +1583,7 @@ export const json = {
 
 
     {
-      "name": "page_66",
+      "name": "page_78",
       "elements": [
         {
           "type": "rating",
@@ -1442,7 +1606,7 @@ export const json = {
 
 
     {
-      "name": "page_67",
+      "name": "page_79",
       "elements": [
         {
           "type": "rating",
@@ -1465,7 +1629,7 @@ export const json = {
 
 
     {
-      "name": "page_68",
+      "name": "page_80",
       "elements": [
         {
           "type": "rating",
@@ -1488,7 +1652,7 @@ export const json = {
 
 
     {
-      "name": "page_69",
+      "name": "page_81",
       "elements": [
         {
           "type": "rating",
@@ -1511,12 +1675,12 @@ export const json = {
 
 
     {
-      "name": "page_70",
+      "name": "page_82",
       "elements": [
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Elaboration part 5</h3><p>Your task is to verbally elaborate and support your answers to the following three questions. Please take your time to provide detailed insights, including reasons why you believe your responses are accurate. Include relevant stories from your life and provide explanations for each of your responses.</p><p><strong>Remember, always respond in a way that portrays you in a positive light.</strong></p>"
+          "html": "<h3>Elaboration part 5</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
         }
       ],
       "readOnly": true
@@ -1524,22 +1688,63 @@ export const json = {
 
 
     {
-      "name": "page_71",
+      "name": "page_83",
       "elements": [
         {
           "type": "html",
-          "name": "elaboration_5",
-          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who rarely feels anxious or afraid:</b> <i>{value_49}</i></p><p><b>I am someone who tends to feel depressed, blue:</b> <i>{value_54}</i></p><p><b>I am someone who is temperamental, gets emotional easily:</b> <i>{value_59}</i></p>"
+          "name": "elaboration_5_1",
+          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who prefers to have others take charge:</b> <i>{value_51}</i></p>"
         }
       ],
       "readOnly": true,
-      // "navigationButtonsVisibility": "hide",
-      // "maxTimeToFinish": 20
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
     },
 
 
     {
-      "name": "page_72",
+      "name": "page_84",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_5_1",
+          "html": "<h3>Elaboration part 5</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_85",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_5_2",
+          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who is polite, courteous to others:</b> <i>{value_52}</i></p>"
+        }
+      ],
+      "readOnly": true,
+      "navigationButtonsVisibility": "hide",
+      "maxTimeToFinish": 15
+    },
+
+
+    {
+      "name": "page_86",
+      "elements": [
+        {
+          "type": "html",
+          "name": "elaboration_timeout_5_2",
+          "html": "<h3>Elaboration part 5</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+        }
+      ],
+      "readOnly": true,
+    },
+
+
+    {
+      "name": "page_87",
       "elements": [
         {
           "type": "matrixdropdown",
@@ -1832,6 +2037,7 @@ export const json = {
   "progressBarType": "pages",
   // "firstPageIsStarted": true,
   "showTimerPanel": "bottom",
+  "showTimerPanelMode": "page",
   "widthMode": "static",
   "width": "1100px"
 }
