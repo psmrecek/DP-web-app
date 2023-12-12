@@ -69,7 +69,6 @@ function SurveyComponent() {
         return (
             <div className="navigation-block">
                 <div className="navigation-buttons-container">
-                    {/* {renderButton('Previous', prevPage, pageNo !== 0)} */}
                     {renderButton('Next', nextPage, pageNo !== survey.visiblePages.length - 1)}
                     {renderButton('Complete', endSurvey, pageNo === survey.visiblePages.length - 1)}
                 </div>
