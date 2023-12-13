@@ -12,11 +12,11 @@ export const json = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ybol83PzV9Q?si=fQKmSZQAn2v95wVd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ]
     },
-
+    
 
     {
       "name": "page_2",
@@ -300,7 +300,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Welcome to the first elaboration part of the questionnaire!</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ],
       "readOnly": true
@@ -313,7 +313,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_1_1",
-          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who is relaxed, handles stress well:</b> <i>{value_4}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is relaxed, handles stress well</b><br><br>You responded: <i>{value_4}</i></font></p>"        
         }
       ],
       "readOnly": true,
@@ -328,7 +328,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_1_1",
-          "html": "<h3>Elaboration part 1</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
         }
       ],
       "readOnly": true,
@@ -341,7 +341,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_1_2",
-          "html": "<h3>Elaboration part 1</h3><br><p><b>I am someone who tends to be lazy:</b> <i>{value_8}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who tends to be lazy</b><br><br>You responded: <i>{value_8}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -356,7 +356,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_1_2",
-          "html": "<h3>Elaboration part 1</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -645,7 +645,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Elaboration part 2</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -658,7 +658,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_2_1",
-          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is inventive, finds clever ways to do things:</b> <i>{value_15}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is inventive, finds clever ways to do things</b><br><br>You responded: <i>{value_15}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -673,7 +673,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_2_1",
-          "html": "<h3>Elaboration part 2</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
         }
       ],
       "readOnly": true,
@@ -686,7 +686,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_2_2",
-          "html": "<h3>Elaboration part 2</h3><br><p><b>I am someone who is systematic, likes to keep things in order:</b> <i>{value_18}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is systematic, likes to keep things in order</b><br><br>You responded: <i>{value_18}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -701,7 +701,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_2_2",
-          "html": "<h3>Elaboration part 2</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -990,7 +990,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Elaboration part 3</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -1003,7 +1003,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_3_1",
-          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who has little creativity:</b> <i>{value_30}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who has little creativity</b><br><br>You responded: <i>{value_30}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -1018,7 +1018,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_3_1",
-          "html": "<h3>Elaboration part 3</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
         }
       ],
       "readOnly": true,
@@ -1031,7 +1031,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_3_2",
-          "html": "<h3>Elaboration part 3</h3><br><p><b>I am someone who is helpful and unselfish with others:</b> <i>{value_32}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is helpful and unselfish with others</b><br><br>You responded: <i>{value_32}</i></font></p>"  
         }
       ],
       "readOnly": true,
@@ -1046,7 +1046,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_3_2",
-          "html": "<h3>Elaboration part 3</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1335,7 +1335,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Elaboration part 4</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -1348,7 +1348,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_4_1",
-          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who often feels sad:</b> <i>{value_39}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who often feels sad</b><br><br>You responded: <i>{value_39}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -1363,7 +1363,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_4_1",
-          "html": "<h3>Elaboration part 4</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
         }
       ],
       "readOnly": true,
@@ -1376,7 +1376,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_4_2",
-          "html": "<h3>Elaboration part 4</h3><br><p><b>I am someone who is full of energy:</b> <i>{value_41}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is full of energy</b><br><br>You responded: <i>{value_41}</i></font></p>"
         }
       ],
       "readOnly": true,
@@ -1391,7 +1391,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_4_2",
-          "html": "<h3>Elaboration part 4</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1680,7 +1680,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Elaboration part 5</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -1693,7 +1693,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_5_1",
-          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who prefers to have others take charge:</b> <i>{value_51}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who prefers to have others take charge</b><br><br>You responded: <i>{value_51}</i></font></p>"    
         }
       ],
       "readOnly": true,
@@ -1708,7 +1708,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_1",
-          "html": "<h3>Elaboration part 5</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
         }
       ],
       "readOnly": true,
@@ -1721,7 +1721,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_5_2",
-          "html": "<h3>Elaboration part 5</h3><br><p><b>I am someone who is polite, courteous to others:</b> <i>{value_52}</i></p>"
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is polite, courteous to others</b><br><br>You responded: <i>{value_52}</i></font></p>"        
         }
       ],
       "readOnly": true,
@@ -1736,7 +1736,7 @@ export const json = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_2",
-          "html": "<h3>Elaboration part 5</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the final part of the survey.</font></p>"   
         }
       ],
       "readOnly": true,
@@ -1747,9 +1747,22 @@ export const json = {
       "name": "page_87",
       "elements": [
         {
+          "type": "html",
+          "name": "instructions_7",
+          "html": "<h3>Verbal Elaboration (5/5)</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+        }
+      ],
+      "readOnly": true
+    },
+
+
+    {
+      "name": "page_88",
+      "elements": [
+        {
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
-          "title": "Ground Truth",
+          "title": "Matrix of Answers",
           "isRequired": true,
           "columns": [
             {

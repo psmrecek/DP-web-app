@@ -6,7 +6,7 @@ first_page = '''
           "type": "html",
           "name": {instructions_name},
           "state": "expanded",
-          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"https://www.youtube.com/embed/ybol83PzV9Q?si=fQKmSZQAn2v95wVd\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ]
     }},
@@ -98,6 +98,20 @@ question_string = '''
     }},
 '''
 
+instructions_string_first = '''
+    {{
+      "name": {page_name},
+      "elements": [
+        {{
+          "type": "html",
+          "name": {instructions_name},
+          "html": "<h3>{header}</h3><iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+        }}
+      ],
+      "readOnly": true
+    }},
+    '''
+
 instructions_string = '''
     {{
       "name": {page_name},
@@ -105,7 +119,7 @@ instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><p>Your task is to verbally elaborate and support some of the answers you gave before. Please take your time to provide detailed insights and relevant stories from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.</p><br><p><strong>Remember, always respond truthfully and honestly. Convincing personality is more important for employers than absolute authenticity.</strong></p><br><p>You have one minute to respond to each statement. Are you ready?</p>"
+          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }}
       ],
       "readOnly": true
@@ -119,7 +133,7 @@ elaboration_string = '''
         {{
           "type": "html",
           "name": {elaboration_name},
-          "html": "<h3>{header}</h3><br><p><b>{q1}:</b> <i>{{{v1}}}</i></p>"
+          "html": "<h3>{header}</h3><br><p><font size=\\"5\\"><b>{q1}</b><br><br>You responded: <i>{{{v1}}}</i></font></p>"
         }}
       ],
       "readOnly": true,
@@ -135,10 +149,24 @@ elaboration_timeout_string = '''
         {{
           "type": "html",
           "name": {elaboration_name},
-          "html": "<h3>{header}</h3><br><p>Your time for this question has ended. Please complete your response and click <strong>Next</strong> to proceed to the next question.</p>"
+          "html": "<h3>{header}</h3><br><p><font size=\\"5\\">Please complete your response and click <b>Next</b> to proceed {proceed_to_what}.</font></p>"
         }}
       ],
       "readOnly": true,
+    }},
+    '''
+
+matrix_instructions_string = '''
+    {{
+      "name": {page_name},
+      "elements": [
+        {{
+          "type": "html",
+          "name": {instructions_name},
+          "html": "<h3>{header}</h3><iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+        }}
+      ],
+      "readOnly": true
     }},
     '''
 
@@ -149,7 +177,7 @@ matrix_string = '''
         {{
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
-          "title": "Ground Truth",
+          "title": "Matrix of Answers",
           "isRequired": true,
           "columns": [
             {{
@@ -206,10 +234,37 @@ elaboration_question_index = 0
 
 elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
+variant = "FG"
+# variant = "H"
+
+elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
+elaboration_string_h = '''Remember, always respond <b>truthfully and honestly</b>. Your authenticity is more important for employers than imperfections.'''
+
+intro_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+intro_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+
+elaboration_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+elaboration_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+
+matrix_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+matrix_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+
+if variant == "FG":
+  selected_elaboration_string = elaboration_string_fg
+  selected_intro_video_link = intro_video_link_fg
+  selected_elaboration_video_link = elaboration_video_link_fg
+  selected_matrix_video_link = matrix_video_link_fg
+
+if variant == "H":
+  selected_elaboration_string = elaboration_string_h
+  selected_intro_video_link = intro_video_link_h
+  selected_elaboration_video_link = elaboration_video_link_h
+  selected_matrix_video_link = matrix_video_link_h
+
 for i in range(1, 61):
     if i == 1:
         print(first_page.format(page_name='"page_'+str(page_counter)+'"',
-              instructions_name='"instructions_'+str(instructions_counter)+'"'))
+              instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_intro_video_link))
         page_counter += 1
         instructions_counter += 1
 
@@ -221,37 +276,53 @@ for i in range(1, 61):
                               str(i)+'"', question=questions[i-1])
 
     if i % 12 == 0:
-        header = f'Elaboration part {i // 12}'
-        if i // 12 == 1:
-            instruction_header = 'Welcome to the first elaboration part of the questionnaire!'
+        instruction_header = f'Verbal Elaboration ({i // 12}/5)'
+
+        if elaboration_counter == 1:
+          print(instructions_string_first.format(page_name='"page_'+str(page_counter)+'"',
+                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_elaboration_video_link))
         else:
-            instruction_header = header
-        print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-              instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header))
+          print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, specification=selected_elaboration_string))
         page_counter += 1
         instructions_counter += 1
 
+        elaboration_question_header = "Elaborate on this answer of yours:"
+        elaboration_timeout_header = "Your time for this question has ended!"
+
+        elaboration_timeout_proc_ela = "to the next elaboration question"
+        elaboration_timeout_proc_que = "to the next 12 questions of the survey"
+        elaboration_timeout_proc_mat = "to the final part of the survey"
+
         q1_index = elaboration_questions_indices[elaboration_question_index]
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', header=header,
+        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', header=elaboration_question_header,
               q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
         page_counter += 1
         elaboration_question_index += 1
 
-        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_1"', header=header))
+        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_1"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_ela))
         page_counter += 1
 
         q1_index = elaboration_questions_indices[elaboration_question_index]
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', header=header,
+        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', header=elaboration_question_header,
               q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
         page_counter += 1
         elaboration_question_index += 1
 
-        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=header))
+        if elaboration_counter == 5:
+          print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_mat))
+        else:
+          print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_que))
         page_counter += 1
 
         elaboration_counter += 1
 
     if i % 60 == 0:
+        print(matrix_instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_matrix_video_link))
+        page_counter += 1
+        instructions_counter += 1
+
         print(matrix_string.format(page_name='"page_' +
               str(page_counter)+'"', rows=rows))
         page_counter += 1
