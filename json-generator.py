@@ -12,6 +12,21 @@ first_page = '''
     }},
     '''
 
+mock_questions = [
+    "I am someone who is often intrigued by puzzles and brain teasers",
+    "I am someone who is always eager to explore new places and cultures",
+    "I am someone who is deeply moved by the arts and creative expressions",
+    "I am someone who is very meticulous and attentive to details in my work",
+    "I am someone who is usually the peacemaker in conflicts among friends",
+    "I am someone who is passionate about environmental and social causes",
+    "I am someone who is frequently the life of the party and loves social gatherings",
+    "I am someone who is always seeking out new experiences and adventures",
+    "I am someone who is known for my practical solutions to problems",
+    "I am someone who is deeply introspective and often lost in thought",
+    "I am someone who is very disciplined and self-motivated in achieving my goals",
+    "I am someone who is extremely compassionate and empathetic towards others"
+]
+
 questions = ["I am someone who is outgoing, sociable",
              "I am someone who is compassionate, has a soft heart",
              "I am someone who tends to be disorganized",
@@ -234,32 +249,35 @@ elaboration_question_index = 0
 
 elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
-variant = "FG"
-# variant = "H"
+# variant = "FG"
+variant = "H"
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
 
-intro_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
-intro_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+intro_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=J8jq9VDMiX8HQ_R3" # nespravny link
+intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
 
-elaboration_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
-elaboration_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK"
+elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?si=u4YeIq9rnLKIKMx9"
 
-matrix_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
-matrix_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
+matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY"
+matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?si=rMII_qHGaYQTttRW"
 
 if variant == "FG":
-  selected_elaboration_string = elaboration_string_fg
-  selected_intro_video_link = intro_video_link_fg
-  selected_elaboration_video_link = elaboration_video_link_fg
-  selected_matrix_video_link = matrix_video_link_fg
+    selected_elaboration_string = elaboration_string_fg
+    selected_intro_video_link = intro_video_link_fg
+    selected_elaboration_video_link = elaboration_video_link_fg
+    selected_matrix_video_link = matrix_video_link_fg
 
 if variant == "H":
-  selected_elaboration_string = elaboration_string_h
-  selected_intro_video_link = intro_video_link_h
-  selected_elaboration_video_link = elaboration_video_link_h
-  selected_matrix_video_link = matrix_video_link_h
+    selected_elaboration_string = elaboration_string_h
+    selected_intro_video_link = intro_video_link_h
+    selected_elaboration_video_link = elaboration_video_link_h
+    selected_matrix_video_link = matrix_video_link_h
+
+# Replace first 12 questions with mock questions
+# questions[0:12] = mock_questions
 
 for i in range(1, 61):
     if i == 1:
@@ -279,11 +297,11 @@ for i in range(1, 61):
         instruction_header = f'Verbal Elaboration ({i // 12}/5)'
 
         if elaboration_counter == 1:
-          print(instructions_string_first.format(page_name='"page_'+str(page_counter)+'"',
-                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_elaboration_video_link))
+            print(instructions_string_first.format(page_name='"page_'+str(page_counter)+'"',
+                  instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_elaboration_video_link))
         else:
-          print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, specification=selected_elaboration_string))
+            print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+                  instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, specification=selected_elaboration_string))
         page_counter += 1
         instructions_counter += 1
 
@@ -296,30 +314,33 @@ for i in range(1, 61):
 
         q1_index = elaboration_questions_indices[elaboration_question_index]
         print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', header=elaboration_question_header,
-              q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
+              q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
         page_counter += 1
         elaboration_question_index += 1
 
-        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_1"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_ela))
+        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+              str(elaboration_counter)+'_1"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_ela))
         page_counter += 1
 
         q1_index = elaboration_questions_indices[elaboration_question_index]
         print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', header=elaboration_question_header,
-              q1=questions[q1_index - 1],v1='value_'+str(q1_index)))
+              q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
         page_counter += 1
         elaboration_question_index += 1
 
         if elaboration_counter == 5:
-          print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_mat))
+            print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+                  str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_mat))
         else:
-          print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_'+str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_que))
+            print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+                  str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_que))
         page_counter += 1
 
         elaboration_counter += 1
 
     if i % 60 == 0:
         print(matrix_instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_matrix_video_link))
+                                                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_matrix_video_link))
         page_counter += 1
         instructions_counter += 1
 
