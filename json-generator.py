@@ -255,7 +255,7 @@ variant = "FG"
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
 
-intro_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=J8jq9VDMiX8HQ_R3" # nespravny link
+intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM"
 intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
 
 elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK"
