@@ -178,7 +178,7 @@ matrix_instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ],
       "readOnly": true
@@ -249,8 +249,8 @@ elaboration_question_index = 0
 
 elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
-# variant = "FG"
-variant = "H"
+variant = "FG"
+# variant = "H"
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
@@ -340,7 +340,7 @@ for i in range(1, 61):
 
     if i % 60 == 0:
         print(matrix_instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-                                                instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_matrix_video_link))
+                                                instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_matrix_video_link))
         page_counter += 1
         instructions_counter += 1
 

@@ -1749,7 +1749,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<h3>Verbal Elaboration (5/5)</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
         }
       ],
       "readOnly": true
