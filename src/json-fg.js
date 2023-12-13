@@ -1,4 +1,4 @@
-export const json = {
+export const json_fg = {
   "title": "DP Survey Demo",
   // "description": "Chill Insights, Solid Results",
   // "logo": "Logo.png",
@@ -645,7 +645,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -990,7 +990,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -1335,7 +1335,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true
@@ -1680,7 +1680,7 @@ export const json = {
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
         }
       ],
       "readOnly": true

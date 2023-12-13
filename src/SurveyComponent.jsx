@@ -4,9 +4,19 @@ import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.min.css";
 import * as SurveyTheme from "survey-core/themes";
 import "./index.css";
-import { json } from "./json";
+import { json_h } from "./json-h";
+import { json_fg } from "./json-fg";
 
-function SurveyComponent() {
+function SurveyComponent( {experiment_type}) {
+
+    console.log(experiment_type);
+    
+    if (experiment_type === "h") {
+        var json = json_h;
+    } else if (experiment_type === "fg") {
+        var json = json_fg;
+    }
+
     const survey = new Model(json);
     survey.applyTheme(SurveyTheme.PlainLight);
 

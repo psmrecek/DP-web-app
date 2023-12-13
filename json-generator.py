@@ -238,7 +238,7 @@ variant = "FG"
 # variant = "H"
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
-elaboration_string_h = '''Remember, always respond <b>truthfully and honestly</b>. Your authenticity is more important for employers than imperfections.'''
+elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
 
 intro_video_link_fg = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
 intro_video_link_h = "https://www.youtube.com/embed/ybol83PzV9Q?si=sgHw18zwEpd0-W7w"
