@@ -5,10 +5,10 @@ import './index.css';
 import SurveyComponent from "./SurveyComponent";
 
 const App = () => (
-  <Router>
+  <Router basename="/DP-web-app">
     <Routes>
-      <Route path="/DP-web-app/h" element={<SurveyComponent experiment_type="h" />} />
-      <Route path="/DP-web-app/fg" element={<SurveyComponent experiment_type="fg" />} />
+      <Route path="/h" element={<SurveyComponent experiment_type="h" />} />
+      <Route path="/fg" element={<SurveyComponent experiment_type="fg" />} />
     </Routes>
   </Router>
 );
