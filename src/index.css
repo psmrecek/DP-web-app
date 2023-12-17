@@ -18,7 +18,9 @@
 }
 
 .sv-components-row {
-    height: calc(100vh - 88px - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    /* height: calc(100vh - 88px - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));  With title */
+    height: calc(100vh - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    /* Without title */
 }
 
 .sv-components-column {
@@ -43,4 +45,15 @@
     width: calc(165px * 1.2);
     height: calc(56px * 1.2);
     font-size: calc(var(--sjs-font-questiontitle-size, var(--sjs-font-size, 16px)) * 1.2) !important;
+}
+
+.sd-body.sd-body--static {
+    padding-top: 0px !important;
+}
+
+.sd-html h3 {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 10px !important;
 }
