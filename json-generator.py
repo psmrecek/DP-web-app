@@ -198,7 +198,7 @@ matrix_string = '''
         {{
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
-          "title": "Matrix of Answers",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
             {{
