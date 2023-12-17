@@ -1,12 +1,14 @@
 export const json_fg = {
-  "title": "Survey",
-  // "description": "Chill Insights, Solid Results",
-  // "logo": "Logo.png",
-  // "logoPosition": "right",
-  "surveyPostId": "",
-  "surveyShowDataSaving": true,
-  "completedHtml": "<h4>&nbsp;&nbsp;Thank you for completing the survey.</h4><br><br><h4>Click the 'Done' button at the top of the screen to finish.</h4>",
-  "pages": [
+    // "title": "Survey",
+    // "description": "Chill Insights, Solid Results",
+    // "logo": "Logo.png",
+    // "logoPosition": "right",
+    // "surveyPostId": "Not yet available FG",
+    // "surveyShowDataSaving": true,
+    "completedHtml": "<div><h2>Thank you for completing the survey.</h2><h3>Click the 'Done' button at the top of the screen to finish.</h3></div",
+    "pages": [
+
+
     {
       "name": "page_1",
       "elements": [
@@ -14,7 +16,7 @@ export const json_fg = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<h3>Welcome to the Questionnaire</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ]
     },
@@ -302,12 +304,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Verbal Elaboration (1/5)</h3><iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_15",
@@ -315,14 +317,14 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_1_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is relaxed, handles stress well</b><br><br>You responded: <i>{value_4}</i></font></p>"        
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is relaxed, handles stress well</b><br><br>You responded: <i>{value_4}</i></font></p>"
         }
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_16",
@@ -330,12 +332,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_1_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_17",
@@ -350,7 +352,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_18",
@@ -363,7 +365,7 @@ export const json_fg = {
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_19",
@@ -652,7 +654,7 @@ export const json_fg = {
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_32",
@@ -667,7 +669,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_33",
@@ -675,12 +677,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_2_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_34",
@@ -695,7 +697,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_35",
@@ -708,7 +710,7 @@ export const json_fg = {
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_36",
@@ -997,7 +999,7 @@ export const json_fg = {
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_49",
@@ -1012,7 +1014,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_50",
@@ -1020,12 +1022,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_3_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_51",
@@ -1033,14 +1035,14 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_3_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is helpful and unselfish with others</b><br><br>You responded: <i>{value_32}</i></font></p>"  
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is helpful and unselfish with others</b><br><br>You responded: <i>{value_32}</i></font></p>"
         }
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_52",
@@ -1053,7 +1055,7 @@ export const json_fg = {
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_53",
@@ -1342,7 +1344,7 @@ export const json_fg = {
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_66",
@@ -1357,7 +1359,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_67",
@@ -1365,12 +1367,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_4_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_68",
@@ -1385,7 +1387,7 @@ export const json_fg = {
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_69",
@@ -1398,7 +1400,7 @@ export const json_fg = {
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_70",
@@ -1687,7 +1689,7 @@ export const json_fg = {
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_83",
@@ -1695,14 +1697,14 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_5_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who prefers to have others take charge</b><br><br>You responded: <i>{value_51}</i></font></p>"    
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who prefers to have others take charge</b><br><br>You responded: <i>{value_51}</i></font></p>"
         }
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_84",
@@ -1710,12 +1712,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"  
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_85",
@@ -1723,14 +1725,14 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_5_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is polite, courteous to others</b><br><br>You responded: <i>{value_52}</i></font></p>"        
+          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is polite, courteous to others</b><br><br>You responded: <i>{value_52}</i></font></p>"
         }
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
       "maxTimeToFinish": 15
     },
-
+    
 
     {
       "name": "page_86",
@@ -1738,12 +1740,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the final part of the survey.</font></p>"   
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the final part of the survey.</font></p>"
         }
       ],
       "readOnly": true,
     },
-
+    
 
     {
       "name": "page_87",
@@ -1751,12 +1753,12 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<iframe width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
     },
-
+    
 
     {
       "name": "page_88",
@@ -1798,7 +1800,7 @@ export const json_fg = {
             }
           ],
           "rows": [
-
+            
             {
               "value": "ground_truth_row_1",
               "text": "I am someone who is outgoing, sociable"
@@ -2043,16 +2045,19 @@ export const json_fg = {
         }
       ]
     },
-  ],
-  "sendResultOnPageNext": true,
-  "showPrevButton": false,
-  "showPageTitles": false,
-  // "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
-  "showProgressBar": "top",
-  "progressBarType": "pages",
-  // "firstPageIsStarted": true,
-  "showTimerPanel": "bottom",
-  "showTimerPanelMode": "page",
-  "widthMode": "static",
-  "width": "1100px"
+  
+
+    ],
+    "sendResultOnPageNext": true,
+    "showPrevButton": false,
+    "showPageTitles": false,
+    // "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
+    "showProgressBar": "top",
+    "progressBarType": "pages",
+    // "firstPageIsStarted": true,
+    "showTimerPanel": "bottom",
+    "showTimerPanelMode": "page",
+    "widthMode": "static",
+    "width": "1100px"
 }
+
