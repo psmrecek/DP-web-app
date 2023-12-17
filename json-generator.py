@@ -272,8 +272,8 @@ json_name_h = "json_h"
 file_name_fg = "json-fg"
 file_name_h = "json-h"
 
-surveyPostId_h = "Not yet available H"
-surveyPostId_fg = "Not yet available FG"
+surveyPostId_h = "54e496a9-cd97-4034-8064-27f080e4fdf7"
+surveyPostId_fg = "2fd368fb-ae19-4fc9-8e0b-f917faa28bcb"
 
 if variant == "FG":
     selected_elaboration_string = elaboration_string_fg
@@ -299,7 +299,7 @@ start = """export const {json_name} = {{
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
-    // "surveyPostId": "{surveyPostId}",
+    "surveyPostId": "{surveyPostId}",
     // "surveyShowDataSaving": true,
     "completedHtml": "<div><h2>Thank you for completing the survey.</h2><h3>Click the 'Done' button at the top of the screen to finish.</h3></div",
     "pages": [
