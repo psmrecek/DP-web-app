@@ -3,7 +3,7 @@ export const json_h = {
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
-    "completedHtml": "<h4>&nbsp;&nbsp;Thank you for completing the survey</h4>",
+    "completedHtml": "<h4>&nbsp;&nbsp;Thank you for completing the survey.</h4><br><br><h4>Click the 'Done' button at the top of the screen to finish.</h4>",
     "pages": [
         {
             "name": "page_1",
@@ -2045,7 +2045,7 @@ export const json_h = {
     "sendResultOnPageNext": true,
     "showPrevButton": false,
     "showPageTitles": false,
-    "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
+    // "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
     "showProgressBar": "top",
     "progressBarType": "pages",
     // "firstPageIsStarted": true,
