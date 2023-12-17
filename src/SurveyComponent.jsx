@@ -9,13 +9,13 @@ import { json_fg } from "./json-fg";
 
 function SurveyComponent({ experiment_type }) {
 
-    var i1h = 5000;
-    var i2h = 7000;
-    var i7h = 10000;
+    var i1h = 96000;
+    var i2h = 35000;
+    var i7h = 40000;
 
-    var i1fg = 10000;
-    var i2fg = 5000;
-    var i7fg = 7000;
+    var i1fg = 101000;
+    var i2fg = 3700;
+    var i7fg = 4000;
 
     console.log(experiment_type);
 
