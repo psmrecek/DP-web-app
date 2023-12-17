@@ -6,7 +6,7 @@ first_page = '''
           "type": "html",
           "name": {instructions_name},
           "state": "expanded",
-          "html": "<iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<h3>Welcome to the Questionnaire</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ]
     }},
@@ -120,7 +120,7 @@ instructions_string_first = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<h3>{header}</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ],
       "readOnly": true
@@ -178,7 +178,7 @@ matrix_instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ],
       "readOnly": true
@@ -249,8 +249,10 @@ elaboration_question_index = 0
 
 elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
+# --------------------------------------------------------------------------------------------------------------
 variant = "FG"
 # variant = "H"
+# --------------------------------------------------------------------------------------------------------------
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
@@ -264,20 +266,71 @@ elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?si=u4YeIq9
 matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY"
 matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?si=rMII_qHGaYQTttRW"
 
+json_name_fg = "json_fg"
+json_name_h = "json_h"
+
+file_name_fg = "json-fg"
+file_name_h = "json-h"
+
+surveyPostId_h = "Not yet available H"
+surveyPostId_fg = "Not yet available FG"
+
 if variant == "FG":
     selected_elaboration_string = elaboration_string_fg
     selected_intro_video_link = intro_video_link_fg
     selected_elaboration_video_link = elaboration_video_link_fg
     selected_matrix_video_link = matrix_video_link_fg
+    json_name =  json_name_fg
+    file_name = file_name_fg
+    surveyPostId = surveyPostId_fg
+
 
 if variant == "H":
     selected_elaboration_string = elaboration_string_h
     selected_intro_video_link = intro_video_link_h
     selected_elaboration_video_link = elaboration_video_link_h
     selected_matrix_video_link = matrix_video_link_h
+    json_name = json_name_h
+    file_name = file_name_h
+    surveyPostId = surveyPostId_h
+
+start = """export const {json_name} = {{
+    // "title": "Survey",
+    // "description": "Chill Insights, Solid Results",
+    // "logo": "Logo.png",
+    // "logoPosition": "right",
+    // "surveyPostId": "{surveyPostId}",
+    // "surveyShowDataSaving": true,
+    "completedHtml": "<div><h2>Thank you for completing the survey.</h2><h3>Click the 'Done' button at the top of the screen to finish.</h3></div",
+    "pages": [
+"""
+
+end = """
+    ],
+    "sendResultOnPageNext": true,
+    "showPrevButton": false,
+    "showPageTitles": false,
+    // "navigateToUrl": "https://www.fiit.stuba.sk/en.html",
+    "showProgressBar": "top",
+    "progressBarType": "pages",
+    // "firstPageIsStarted": true,
+    "showTimerPanel": "bottom",
+    "showTimerPanelMode": "page",
+    "widthMode": "static",
+    "width": "1100px"
+}
+"""
 
 # Replace first 12 questions with mock questions
 # questions[0:12] = mock_questions
+
+# --------------------------------------------------------------------------------------------------------------
+
+# Redirect stdout to file
+import sys
+sys.stdout = open(file_name + ".js", "w")
+
+print(start.format(json_name=json_name, surveyPostId=surveyPostId))
 
 for i in range(1, 61):
     if i == 1:
@@ -347,3 +400,5 @@ for i in range(1, 61):
         print(matrix_string.format(page_name='"page_' +
               str(page_counter)+'"', rows=rows))
         page_counter += 1
+
+print(end)
