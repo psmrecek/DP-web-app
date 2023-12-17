@@ -322,7 +322,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -350,7 +350,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -667,7 +667,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -695,7 +695,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1012,7 +1012,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1040,7 +1040,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1357,7 +1357,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1385,7 +1385,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1702,7 +1702,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1730,7 +1730,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     },
     
 
@@ -1763,6 +1763,11 @@ export const json_h = {
     {
       "name": "page_88",
       "elements": [
+        {
+          "type": "html",
+          "name": "instructions_8",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
         {
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
