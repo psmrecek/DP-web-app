@@ -6,7 +6,7 @@ first_page = '''
           "type": "html",
           "name": {instructions_name},
           "state": "expanded",
-          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ]
     }},
@@ -120,7 +120,7 @@ instructions_string_first = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<h3>{header}</h3><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ],
       "readOnly": true
@@ -178,7 +178,7 @@ matrix_instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<iframe width=\\"840\\" height=\\"473\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
+          "html": "<iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe>"
         }}
       ],
       "readOnly": true
