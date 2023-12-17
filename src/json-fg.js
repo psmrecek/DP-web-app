@@ -3,6 +3,8 @@ export const json_fg = {
   // "description": "Chill Insights, Solid Results",
   // "logo": "Logo.png",
   // "logoPosition": "right",
+  "surveyPostId": "",
+  "surveyShowDataSaving": true,
   "completedHtml": "<h4>&nbsp;&nbsp;Thank you for completing the survey.</h4><br><br><h4>Click the 'Done' button at the top of the screen to finish.</h4>",
   "pages": [
     {
