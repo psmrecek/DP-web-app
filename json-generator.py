@@ -1,3 +1,4 @@
+import sys
 first_page = '''
     {{
       "name": {page_name},
@@ -153,7 +154,7 @@ elaboration_string = '''
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 15
+      "maxTimeToFinish": 60
     }},
     '''
 
@@ -189,6 +190,11 @@ matrix_string = '''
     {{
       "name": {page_name},
       "elements": [
+        {{
+          "type": "html",
+          "name": {instructions_name},
+          "html": "<h3>Final Task</h3><p><font size=\\"4\\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>{specification}<br><br></font></p>"
+        }},
         {{
           "type": "matrixdropdown",
           "name": "ground_truth_matrix",
@@ -257,6 +263,9 @@ variant = "FG"
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
 
+matrix_specification_fg = '''It is critical that you <b>now always</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
+matrix_specification_h = '''It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
+
 intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM"
 intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
 
@@ -277,16 +286,18 @@ surveyPostId_fg = "2fd368fb-ae19-4fc9-8e0b-f917faa28bcb"
 
 if variant == "FG":
     selected_elaboration_string = elaboration_string_fg
+    selected_matrix_specification = matrix_specification_fg
     selected_intro_video_link = intro_video_link_fg
     selected_elaboration_video_link = elaboration_video_link_fg
     selected_matrix_video_link = matrix_video_link_fg
-    json_name =  json_name_fg
+    json_name = json_name_fg
     file_name = file_name_fg
     surveyPostId = surveyPostId_fg
 
 
 if variant == "H":
     selected_elaboration_string = elaboration_string_h
+    selected_matrix_specification = matrix_specification_h
     selected_intro_video_link = intro_video_link_h
     selected_elaboration_video_link = elaboration_video_link_h
     selected_matrix_video_link = matrix_video_link_h
@@ -327,7 +338,6 @@ end = """
 # --------------------------------------------------------------------------------------------------------------
 
 # Redirect stdout to file
-import sys
 sys.stdout = open(file_name + ".js", "w")
 
 print(start.format(json_name=json_name, surveyPostId=surveyPostId))
@@ -398,7 +408,8 @@ for i in range(1, 61):
         instructions_counter += 1
 
         print(matrix_string.format(page_name='"page_' +
-              str(page_counter)+'"', rows=rows))
+              str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows))
         page_counter += 1
+        instructions_counter += 1
 
 print(end)
