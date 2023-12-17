@@ -1,5 +1,5 @@
 export const json_h = {
-    // "title": "Survey",
+    "title": "Survey",
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",

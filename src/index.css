@@ -18,9 +18,8 @@
 }
 
 .sv-components-row {
-    /* height: calc(100vh - 88px - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));  With title */
-    height: calc(100vh - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));
-    /* Without title */
+    height: calc(100vh - 88px - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    /* height: calc(100vh - 2px - 6*(var(--sjs-base-unit, var(--base-unit, 8px)))); Without title */
 }
 
 .sv-components-column {

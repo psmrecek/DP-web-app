@@ -306,7 +306,7 @@ if variant == "H":
     surveyPostId = surveyPostId_h
 
 start = """export const {json_name} = {{
-    // "title": "Survey",
+    "title": "Survey",
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
