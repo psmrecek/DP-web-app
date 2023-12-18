@@ -14,8 +14,8 @@ function SurveyComponent({ experiment_type }) {
     var i7h = 40000;
 
     var i1fg = 101000;
-    var i2fg = 3700;
-    var i7fg = 4000;
+    var i2fg = 37000;
+    var i7fg = 40000;
 
     console.log(experiment_type);
 
