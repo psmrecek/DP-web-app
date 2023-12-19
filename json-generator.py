@@ -7,7 +7,7 @@ first_page = '''
           "type": "html",
           "name": {instructions_name},
           "state": "expanded",
-          "html": "<h3>Welcome to the Questionnaire</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
+          "html": "<h3>Welcome to the Questionnaire</h3>{video_instructions_html}<div style=\\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ]
     }},
@@ -121,7 +121,7 @@ instructions_string_first = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
+          "html": "<h3>{header}</h3>{video_instructions_html}<div style=\\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ],
       "readOnly": true
@@ -149,7 +149,7 @@ elaboration_string = '''
         {{
           "type": "html",
           "name": {elaboration_name},
-          "html": "<h3>{header}</h3><br><p><font size=\\"5\\"><b>{q1}</b><br><br>You responded: <i>{{{v1}}}</i></font></p>"
+          "html": "<p><font size=\\"5\\">Question: <b>{q1}</b><br><br>Your response: <b>{{{v1}}}</b><br><br>{task}</font></p>"
         }}
       ],
       "readOnly": true,
@@ -179,7 +179,7 @@ matrix_instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>You're Almost There! Final Task Ahead</h3><font size=\\"4\\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: 40vw; height: 22.5vw;\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3>{video_instructions_html}<div style=\\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\\"><iframe style=\\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\\" src=\\"{link}\\" title=\\"YouTube video player\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\\" allowfullscreen></iframe></div>"
         }}
       ],
       "readOnly": true
@@ -245,68 +245,8 @@ row_string = '''
               "text": "{question}"
             }},'''
 
-
-page_counter = 1
-instructions_counter = 1
-question_counter = 1
-elaboration_counter = 1
-rows = ''
-elaboration_question_index = 0
-
-elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
-
-# --------------------------------------------------------------------------------------------------------------
-variant = "FG"
-# variant = "H"
-# --------------------------------------------------------------------------------------------------------------
-
-elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
-elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
-
-matrix_specification_fg = '''It is critical that you <b>now always</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
-matrix_specification_h = '''It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
-
-intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM"
-intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
-
-elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK"
-elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?si=u4YeIq9rnLKIKMx9"
-
-matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY"
-matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?si=rMII_qHGaYQTttRW"
-
-json_name_fg = "json_fg"
-json_name_h = "json_h"
-
-file_name_fg = "json-fg"
-file_name_h = "json-h"
-
-surveyPostId_h = "54e496a9-cd97-4034-8064-27f080e4fdf7"
-surveyPostId_fg = "2fd368fb-ae19-4fc9-8e0b-f917faa28bcb"
-
-if variant == "FG":
-    selected_elaboration_string = elaboration_string_fg
-    selected_matrix_specification = matrix_specification_fg
-    selected_intro_video_link = intro_video_link_fg
-    selected_elaboration_video_link = elaboration_video_link_fg
-    selected_matrix_video_link = matrix_video_link_fg
-    json_name = json_name_fg
-    file_name = file_name_fg
-    surveyPostId = surveyPostId_fg
-
-
-if variant == "H":
-    selected_elaboration_string = elaboration_string_h
-    selected_matrix_specification = matrix_specification_h
-    selected_intro_video_link = intro_video_link_h
-    selected_elaboration_video_link = elaboration_video_link_h
-    selected_matrix_video_link = matrix_video_link_h
-    json_name = json_name_h
-    file_name = file_name_h
-    surveyPostId = surveyPostId_h
-
 start = """export const {json_name} = {{
-    "title": "Survey",
+    "title": "Questionaire",
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
@@ -332,84 +272,143 @@ end = """
 }
 """
 
-# Replace first 12 questions with mock questions
-# questions[0:12] = mock_questions
+# --------------------------------------------------------------------------------------------------------------
+video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div>'''
+
+elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
+elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
+
+matrix_specification_fg = '''It is critical that you <b>now always</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
+matrix_specification_h = '''It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
+
+intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM"
+intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
+
+elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK"
+elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?si=u4YeIq9rnLKIKMx9"
+
+matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY"
+matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?si=rMII_qHGaYQTttRW"
+
+json_name_fg = "json_fg"
+json_name_h = "json_h"
+
+file_name_fg = "json-fg"
+file_name_h = "json-h"
+
+surveyPostId_h = "54e496a9-cd97-4034-8064-27f080e4fdf7"
+surveyPostId_fg = "2fd368fb-ae19-4fc9-8e0b-f917faa28bcb"
 
 # --------------------------------------------------------------------------------------------------------------
 
-# Redirect stdout to file
-sys.stdout = open(file_name + ".js", "w")
+for variant in ["FG", "H"]:
+  page_counter = 1
+  instructions_counter = 1
+  question_counter = 1
+  elaboration_counter = 1
+  rows = ''
+  elaboration_question_index = 0
 
-print(start.format(json_name=json_name, surveyPostId=surveyPostId))
+  elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
 
-for i in range(1, 61):
-    if i == 1:
-        print(first_page.format(page_name='"page_'+str(page_counter)+'"',
-              instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_intro_video_link))
-        page_counter += 1
-        instructions_counter += 1
+  if variant == "FG":
+      selected_elaboration_string = elaboration_string_fg
+      selected_matrix_specification = matrix_specification_fg
+      selected_intro_video_link = intro_video_link_fg
+      selected_elaboration_video_link = elaboration_video_link_fg
+      selected_matrix_video_link = matrix_video_link_fg
+      json_name = json_name_fg
+      file_name = file_name_fg
+      surveyPostId = surveyPostId_fg
 
-    print(question_string.format(page_name='"page_'+str(page_counter)+'"', question_name='"question_' +
-          str(question_counter)+'"', question_text='"'+questions[i-1]+'"', value_name='"value_'+str(question_counter)+'"'))
-    page_counter += 1
-    question_counter += 1
-    rows += row_string.format(value='"ground_truth_row_' +
-                              str(i)+'"', question=questions[i-1])
+  if variant == "H":
+      selected_elaboration_string = elaboration_string_h
+      selected_matrix_specification = matrix_specification_h
+      selected_intro_video_link = intro_video_link_h
+      selected_elaboration_video_link = elaboration_video_link_h
+      selected_matrix_video_link = matrix_video_link_h
+      json_name = json_name_h
+      file_name = file_name_h
+      surveyPostId = surveyPostId_h
 
-    if i % 12 == 0:
-        instruction_header = f'Verbal Elaboration ({i // 12}/5)'
+  # Replace first 12 questions with mock questions
+  # questions[0:12] = mock_questions
 
-        if elaboration_counter == 1:
-            print(instructions_string_first.format(page_name='"page_'+str(page_counter)+'"',
-                  instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_elaboration_video_link))
-        else:
-            print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-                  instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, specification=selected_elaboration_string))
-        page_counter += 1
-        instructions_counter += 1
+  # --------------------------------------------------------------------------------------------------------------
 
-        elaboration_question_header = "Elaborate on this answer of yours:"
-        elaboration_timeout_header = "Your time for this question has ended!"
+  # Redirect stdout to file
+  sys.stdout = open(file_name + ".js", "w")
 
-        elaboration_timeout_proc_ela = "to the next elaboration question"
-        elaboration_timeout_proc_que = "to the next 12 questions of the survey"
-        elaboration_timeout_proc_mat = "to the final part of the survey"
+  print(start.format(json_name=json_name, surveyPostId=surveyPostId))
 
-        q1_index = elaboration_questions_indices[elaboration_question_index]
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', header=elaboration_question_header,
-              q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
-        page_counter += 1
-        elaboration_question_index += 1
+  for i in range(1, 61):
+      if i == 1:
+          print(first_page.format(page_name='"page_'+str(page_counter)+'"',
+                instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_intro_video_link, video_instructions_html=video_instructions_html))
+          page_counter += 1
+          instructions_counter += 1
 
-        print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
-              str(elaboration_counter)+'_1"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_ela))
-        page_counter += 1
+      print(question_string.format(page_name='"page_'+str(page_counter)+'"', question_name='"question_' +
+            str(question_counter)+'"', question_text='"'+questions[i-1]+'"', value_name='"value_'+str(question_counter)+'"'))
+      page_counter += 1
+      question_counter += 1
+      rows += row_string.format(value='"ground_truth_row_' +
+                                str(i)+'"', question=questions[i-1])
 
-        q1_index = elaboration_questions_indices[elaboration_question_index]
-        print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', header=elaboration_question_header,
-              q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
-        page_counter += 1
-        elaboration_question_index += 1
+      if i % 12 == 0:
+          instruction_header = f'Verbal Elaboration ({i // 12}/5)'
 
-        if elaboration_counter == 5:
-            print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
-                  str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_mat))
-        else:
-            print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
-                  str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_que))
-        page_counter += 1
+          if elaboration_counter == 1:
+              print(instructions_string_first.format(page_name='"page_'+str(page_counter)+'"',
+                    instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, link=selected_elaboration_video_link, video_instructions_html=video_instructions_html))
+          else:
+              print(instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+                    instructions_name='"instructions_'+str(instructions_counter)+'"', header=instruction_header, specification=selected_elaboration_string))
+          page_counter += 1
+          instructions_counter += 1
 
-        elaboration_counter += 1
+          elaboration_question_task = "You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer."
+          elaboration_timeout_header = "Your time for this question has ended!"
 
-    if i % 60 == 0:
-        print(matrix_instructions_string.format(page_name='"page_'+str(page_counter)+'"',
-                                                instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_matrix_video_link))
-        page_counter += 1
-        instructions_counter += 1
+          elaboration_timeout_proc_ela = "to the next elaboration question"
+          elaboration_timeout_proc_que = "to the next 12 questions of the survey"
+          elaboration_timeout_proc_mat = "to the final part of the survey"
 
-        print(matrix_string.format(page_name='"page_' +
-              str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows))
-        page_counter += 1
-        instructions_counter += 1
+          q1_index = elaboration_questions_indices[elaboration_question_index]
+          print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_1"', task=elaboration_question_task,
+                q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
+          page_counter += 1
+          elaboration_question_index += 1
 
-print(end)
+          print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+                str(elaboration_counter)+'_1"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_ela))
+          page_counter += 1
+
+          q1_index = elaboration_questions_indices[elaboration_question_index]
+          print(elaboration_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_'+str(elaboration_counter)+'_2"', task=elaboration_question_task,
+                q1=questions[q1_index - 1], v1='value_'+str(q1_index)))
+          page_counter += 1
+          elaboration_question_index += 1
+
+          if elaboration_counter == 5:
+              print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+                    str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_mat))
+          else:
+              print(elaboration_timeout_string.format(page_name='"page_'+str(page_counter)+'"', elaboration_name='"elaboration_timeout_' +
+                    str(elaboration_counter)+'_2"', header=elaboration_timeout_header, proceed_to_what=elaboration_timeout_proc_que))
+          page_counter += 1
+
+          elaboration_counter += 1
+
+      if i % 60 == 0:
+          print(matrix_instructions_string.format(page_name='"page_'+str(page_counter)+'"',
+                                                  instructions_name='"instructions_'+str(instructions_counter)+'"', link=selected_matrix_video_link, video_instructions_html=video_instructions_html))
+          page_counter += 1
+          instructions_counter += 1
+
+          print(matrix_string.format(page_name='"page_' +
+                str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows))
+          page_counter += 1
+          instructions_counter += 1
+
+  print(end)
