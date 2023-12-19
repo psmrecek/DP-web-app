@@ -1,5 +1,5 @@
 export const json_fg = {
-    "title": "Survey",
+    "title": "Questionaire",
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
@@ -16,7 +16,7 @@ export const json_fg = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<h3>Welcome to the Questionnaire</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ]
     },
@@ -304,7 +304,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Verbal Elaboration (1/5)</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
@@ -317,7 +317,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_1_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is relaxed, handles stress well</b><br><br>You responded: <i>{value_4}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is relaxed, handles stress well</b><br><br>Your response: <b>{value_4}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -345,7 +345,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_1_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who tends to be lazy</b><br><br>You responded: <i>{value_8}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who tends to be lazy</b><br><br>Your response: <b>{value_8}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -662,7 +662,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_2_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is inventive, finds clever ways to do things</b><br><br>You responded: <i>{value_15}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is inventive, finds clever ways to do things</b><br><br>Your response: <b>{value_15}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -690,7 +690,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_2_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is systematic, likes to keep things in order</b><br><br>You responded: <i>{value_18}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is systematic, likes to keep things in order</b><br><br>Your response: <b>{value_18}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1007,7 +1007,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_3_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who has little creativity</b><br><br>You responded: <i>{value_30}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who has little creativity</b><br><br>Your response: <b>{value_30}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1035,7 +1035,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_3_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is helpful and unselfish with others</b><br><br>You responded: <i>{value_32}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is helpful and unselfish with others</b><br><br>Your response: <b>{value_32}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1352,7 +1352,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_4_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who often feels sad</b><br><br>You responded: <i>{value_39}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who often feels sad</b><br><br>Your response: <b>{value_39}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1380,7 +1380,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_4_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is full of energy</b><br><br>You responded: <i>{value_41}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is full of energy</b><br><br>Your response: <b>{value_41}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1697,7 +1697,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_5_1",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who prefers to have others take charge</b><br><br>You responded: <i>{value_51}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who prefers to have others take charge</b><br><br>Your response: <b>{value_51}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1725,7 +1725,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "elaboration_5_2",
-          "html": "<h3>Elaborate on this answer of yours:</h3><br><p><font size=\"5\"><b>I am someone who is polite, courteous to others</b><br><br>You responded: <i>{value_52}</i></font></p>"
+          "html": "<p><font size=\"5\">Question: <b>I am someone who is polite, courteous to others</b><br><br>Your response: <b>{value_52}</b><br><br>You have <b>one minute</b> to provide a detailed <b>verbal elaboration</b> of your answer.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1753,7 +1753,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<h3>You're Almost There! Final Task Ahead</h3><font size=\"4\">Please watch the instruction video.<br>The 'Next' button will be enabled once you have completed watching the video.</font><div style=\"padding-top: 15px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: 40vw; height: 22.5vw;\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
