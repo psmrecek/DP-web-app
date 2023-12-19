@@ -9,15 +9,24 @@ import { json_fg } from "./json-fg";
 
 function SurveyComponent({ experiment_type }) {
 
-    var i1h = 96000;
-    var i2h = 35000;
-    var i7h = 40000;
+    // If running on localhost, use debug values
+    if (window.location.href.includes("localhost")) {
+        var i1h = 1000;
+        var i2h = 1000;
+        var i7h = 1000;
 
-    var i1fg = 101000;
-    var i2fg = 37000;
-    var i7fg = 40000;
+        var i1fg = 1000;
+        var i2fg = 1000;
+        var i7fg = 1000;
+    } else {
+        var i1h = 96000;
+        var i2h = 35000;
+        var i7h = 40000;
 
-    console.log(experiment_type);
+        var i1fg = 101000;
+        var i2fg = 37000;
+        var i7fg = 40000;
+    }
 
     if (experiment_type === "h") {
         var json = json_h;
@@ -30,7 +39,6 @@ function SurveyComponent({ experiment_type }) {
         const nextButton = document.getElementsByClassName(
             "sd-navigation__next-btn"
         )[0];
-        console.log(nextButton);
         nextButton.disabled = true;
 
         if (experiment_type === "h") {
@@ -47,8 +55,45 @@ function SurveyComponent({ experiment_type }) {
 
     }, []);
 
+    var elaboration_pages = [
+        "elaboration_1_1",
+        "elaboration_1_2",
+        "elaboration_2_1",
+        "elaboration_2_2",
+        "elaboration_3_1",
+        "elaboration_3_2",
+        "elaboration_4_1",
+        "elaboration_4_2",
+        "elaboration_5_1",
+        "elaboration_5_2"
+    ];
+
     const survey = new Model(json);
     survey.applyTheme(SurveyTheme.PlainLight);
+
+    useEffect(() => {
+        // Function to be called when mutations are observed
+        const observerCallback = (mutationsList, observer) => {
+            for (let mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    let timerElements = document.getElementsByClassName('sd-timer');
+                    if (timerElements.length > 0) {
+                        timerElements[0].style.display = 'none';
+                        observer.disconnect(); // Stop observing after finding the element
+                    }
+                }
+            }
+        };
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(observerCallback);
+
+        // Start observing the body for added nodes
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // Clean up the observer on component unmount
+        return () => observer.disconnect();
+    }, []);
 
     var ground_truth_matrix = survey.getQuestionByName("ground_truth_matrix");
 
@@ -56,11 +101,20 @@ function SurveyComponent({ experiment_type }) {
 
         var question_name = survey.currentPage.questions[0].name;
 
+        const timerElement = document.getElementsByClassName(
+            "sd-timer"
+        )[0];
+
+        if (elaboration_pages.includes(question_name)) {
+            timerElement.style.display = "block";
+        } else {
+            timerElement.style.display = "none";
+        }
+
         if (question_name === "instructions_1" || question_name === "instructions_2" || question_name === "instructions_7") {
             const nextButton = document.getElementsByClassName(
                 "sd-navigation__next-btn"
             )[0];
-            console.log(nextButton);
             nextButton.disabled = true;
 
             if (question_name === "instructions_1" && experiment_type === "h") {
