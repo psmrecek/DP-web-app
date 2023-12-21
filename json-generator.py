@@ -197,7 +197,7 @@ matrix_string = '''
         }},
         {{
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": {matrix_name},
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -322,6 +322,7 @@ for variant in ["FG", "H"]:
   instructions_counter = 1
   question_counter = 1
   elaboration_counter = 1
+  matrix_counter = 1
   rows_list = ['', '', '', '', '', '', '', '', '', '']
   elaboration_question_index = 0
 
@@ -425,8 +426,9 @@ for variant in ["FG", "H"]:
 
           for rows_group in rows_list:
             print(matrix_string.format(page_name='"page_' +
-                  str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows_group))
+                  str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, matrix_name='"ground_truth_matrix_'+str(matrix_counter)+'"', rows=rows_group))
             page_counter += 1
             instructions_counter += 1
+            matrix_counter += 1
 
   print(end)

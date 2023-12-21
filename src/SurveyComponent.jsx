@@ -7,6 +7,7 @@ import "./index.css";
 import { json_h } from "./json-h";
 import { json_fg } from "./json-fg";
 
+
 function SurveyComponent({ experiment_type }) {
 
     // If running on localhost, use debug values
@@ -95,7 +96,29 @@ function SurveyComponent({ experiment_type }) {
         return () => observer.disconnect();
     }, []);
 
-    var ground_truth_matrix = survey.getQuestionByName("ground_truth_matrix");
+    var ground_truth_matrix_1 = survey.getQuestionByName("ground_truth_matrix_1");
+    var ground_truth_matrix_2 = survey.getQuestionByName("ground_truth_matrix_2");
+    var ground_truth_matrix_3 = survey.getQuestionByName("ground_truth_matrix_3");
+    var ground_truth_matrix_4 = survey.getQuestionByName("ground_truth_matrix_4");
+    var ground_truth_matrix_5 = survey.getQuestionByName("ground_truth_matrix_5");
+    var ground_truth_matrix_6 = survey.getQuestionByName("ground_truth_matrix_6");
+    var ground_truth_matrix_7 = survey.getQuestionByName("ground_truth_matrix_7");
+    var ground_truth_matrix_8 = survey.getQuestionByName("ground_truth_matrix_8");
+    var ground_truth_matrix_9 = survey.getQuestionByName("ground_truth_matrix_9");
+    var ground_truth_matrix_10 = survey.getQuestionByName("ground_truth_matrix_10");
+
+    var list_of_ground_truth_matrices = [
+        ground_truth_matrix_1,
+        ground_truth_matrix_2,
+        ground_truth_matrix_3,
+        ground_truth_matrix_4,
+        ground_truth_matrix_5,
+        ground_truth_matrix_6,
+        ground_truth_matrix_7,
+        ground_truth_matrix_8,
+        ground_truth_matrix_9,
+        ground_truth_matrix_10
+    ];
 
     survey.onCurrentPageChanged.add(function (sender, options) {
 
@@ -154,11 +177,16 @@ function SurveyComponent({ experiment_type }) {
             }
         }
 
-        for (var i = 0; i < ground_truth_matrix.rows.length; i++) {
-            let question = survey.getQuestionByName("question_" + (i + 1));
-            let question_value = question?.value;
-            let row_value = ground_truth_matrix.getRowValue(i);
-            ground_truth_matrix.setRowValue(i, { "answer_column": question_value, "ground_truth_column": row_value?.ground_truth_column });
+        for (var matrix_index = 0; matrix_index < list_of_ground_truth_matrices.length; matrix_index++) {
+            var ground_truth_matrix = list_of_ground_truth_matrices[matrix_index];
+            var offset = 60 / list_of_ground_truth_matrices.length * matrix_index;
+
+            for (var matrix_row_index = 0; matrix_row_index < ground_truth_matrix.rows.length; matrix_row_index++) {
+                let question = survey.getQuestionByName("question_" + (matrix_row_index + offset + 1));
+                let question_value = question?.value;
+                let row_value = ground_truth_matrix.getRowValue(matrix_row_index);
+                ground_truth_matrix.setRowValue(matrix_row_index, { "answer_column": question_value, "ground_truth_column": row_value?.ground_truth_column });
+            }
         }
     });
 

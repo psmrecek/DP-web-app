@@ -1770,7 +1770,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_1",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -1846,7 +1846,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_2",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -1922,7 +1922,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_3",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -1998,7 +1998,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_4",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2074,7 +2074,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_5",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2150,7 +2150,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_6",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2226,7 +2226,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_7",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2302,7 +2302,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_8",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2378,7 +2378,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_9",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
@@ -2454,7 +2454,7 @@ export const json_h = {
         },
         {
           "type": "matrixdropdown",
-          "name": "ground_truth_matrix",
+          "name": "ground_truth_matrix_10",
           "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
           "isRequired": true,
           "columns": [
