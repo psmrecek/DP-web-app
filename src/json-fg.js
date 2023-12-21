@@ -3,7 +3,7 @@ export const json_fg = {
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
-    "surveyPostId": "32de0e37-0863-490d-8a48-d9fc230f6887",
+    "surveyPostId": "d5f0e389-36ea-40f1-8fe7-2e128c26a52b",
     // "surveyShowDataSaving": true,
     "completedHtml": "<div><h2>Thank you for completing the survey.</h2><h3>Click the 'Done' button at the top of the screen to finish.</h3></div",
     "pages": [
@@ -322,7 +322,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -350,7 +350,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -667,7 +667,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -695,7 +695,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1012,7 +1012,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1040,7 +1040,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1357,7 +1357,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1385,7 +1385,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1702,7 +1702,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 
@@ -1730,7 +1730,7 @@ export const json_fg = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     },
     
 

@@ -154,7 +154,7 @@ elaboration_string = '''
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 5
+      "maxTimeToFinish": 60
     }},
     '''
 
@@ -312,8 +312,8 @@ json_name_h = "json_h"
 file_name_fg = "json-fg"
 file_name_h = "json-h"
 
-surveyPostId_h = "e9f03b8c-926a-4e96-928c-0c558cbe55f9"
-surveyPostId_fg = "32de0e37-0863-490d-8a48-d9fc230f6887"
+surveyPostId_h = "cc1f9176-b50b-4030-8efb-ccefd93bba37"
+surveyPostId_fg = "d5f0e389-36ea-40f1-8fe7-2e128c26a52b"
 
 # --------------------------------------------------------------------------------------------------------------
 
