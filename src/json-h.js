@@ -332,7 +332,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_1_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
@@ -360,7 +360,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_1_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -677,7 +677,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_2_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
@@ -705,7 +705,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_2_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1022,7 +1022,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_3_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1050,7 +1050,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_3_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1367,7 +1367,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_4_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1395,7 +1395,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_4_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next 12 questions of the survey.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next 12 questions of the survey.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1712,7 +1712,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_1",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the next elaboration question.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the next elaboration question.</font></p>"
         }
       ],
       "readOnly": true,
@@ -1740,7 +1740,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "elaboration_timeout_5_2",
-          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>Next</b> to proceed to the final part of the survey.</font></p>"
+          "html": "<h3>Your time for this question has ended!</h3><br><p><font size=\"5\">Please complete your response and click <b>[Next]</b> to proceed to the final part of the survey.</font></p>"
         }
       ],
       "readOnly": true,
