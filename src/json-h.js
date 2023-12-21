@@ -16,7 +16,7 @@ export const json_h = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/0i9Sy7pZWcg?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/0i9Sy7pZWcg?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ]
     },
@@ -304,7 +304,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/B3fmEYIlziY?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/B3fmEYIlziY?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
@@ -322,7 +322,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -350,7 +350,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -649,7 +649,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -667,7 +667,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -695,7 +695,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -994,7 +994,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -1012,7 +1012,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1040,7 +1040,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1339,7 +1339,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -1357,7 +1357,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1385,7 +1385,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1684,7 +1684,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -1702,7 +1702,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1730,7 +1730,7 @@ export const json_h = {
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     },
     
 
@@ -1753,7 +1753,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ZBoX1kwQOgs?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ZBoX1kwQOgs?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
@@ -1830,6 +1830,58 @@ export const json_h = {
               "value": "ground_truth_row_6",
               "text": "I am someone who has an assertive personality"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_89",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_9",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_7",
               "text": "I am someone who is respectful, treats others with respect"
@@ -1854,6 +1906,58 @@ export const json_h = {
               "value": "ground_truth_row_12",
               "text": "I am someone who tends to find fault with others"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_90",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_10",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_13",
               "text": "I am someone who is dependable, steady"
@@ -1878,6 +1982,58 @@ export const json_h = {
               "value": "ground_truth_row_18",
               "text": "I am someone who is systematic, likes to keep things in order"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_91",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_11",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_19",
               "text": "I am someone who can be tense"
@@ -1902,6 +2058,58 @@ export const json_h = {
               "value": "ground_truth_row_24",
               "text": "I am someone who feels secure, comfortable with self"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_92",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_12",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_25",
               "text": "I am someone who avoids intellectual, philosophical discussions"
@@ -1926,6 +2134,58 @@ export const json_h = {
               "value": "ground_truth_row_30",
               "text": "I am someone who has little creativity"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_93",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_13",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_31",
               "text": "I am someone who is sometimes shy, introverted"
@@ -1950,6 +2210,58 @@ export const json_h = {
               "value": "ground_truth_row_36",
               "text": "I am someone who finds it hard to influence people"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_94",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_14",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_37",
               "text": "I am someone who is sometimes rude to others"
@@ -1974,6 +2286,58 @@ export const json_h = {
               "value": "ground_truth_row_42",
               "text": "I am someone who is suspicious of others' intentions"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_95",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_15",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_43",
               "text": "I am someone who is reliable, can always be counted on"
@@ -1998,6 +2362,58 @@ export const json_h = {
               "value": "ground_truth_row_48",
               "text": "I am someone who leaves a mess, doesn't clean up"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_96",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_16",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_49",
               "text": "I am someone who rarely feels anxious or afraid"
@@ -2022,6 +2438,58 @@ export const json_h = {
               "value": "ground_truth_row_54",
               "text": "I am someone who tends to feel depressed, blue"
             },
+          ]
+        }
+      ]
+    },
+  
+
+    {
+      "name": "page_97",
+      "elements": [
+        {
+          "type": "html",
+          "name": "instructions_17",
+          "html": "<h3>Final Task</h3><p><font size=\"4\">As a final step, we need your assistance to ensure the <b>accuracy and reliability</b> of the responses you've provided.<br><br>It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.<br><br></font></p>"
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "ground_truth_matrix",
+          "title": "Choose honestly whether each answer is a Lie, a Half-truth, or a Truth",
+          "isRequired": true,
+          "columns": [
+            {
+              "name": "answer_column",
+              "title": "Answer",
+              "cellType": "expression",
+              "readOnly": true
+            },
+            {
+              "name": "ground_truth_column",
+              "title": "Ground Truth",
+              "cellType": "radiogroup",
+              "colCount": 0,
+              "isRequired": true,
+              "showInMultipleColumns": true,
+              "choices": [
+                {
+                  "value": "lie",
+                  "text": "Lie"
+                },
+                {
+                  "value": "half-truth",
+                  "text": "Half-truth"
+                },
+                {
+                  "value": "truth",
+                  "text": "Truth"
+                }
+              ],
+              "storeOthersAsComment": true
+            }
+          ],
+          "rows": [
+            
             {
               "value": "ground_truth_row_55",
               "text": "I am someone who has little interest in abstract ideas"
