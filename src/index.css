@@ -60,6 +60,6 @@
 }
 
 .body .ut-btn.ut-btn-primary {
-    background-color: transparent;
-    color: #414237;
+    background-color: transparent !important;
+    color: #414237 !important;
 }
