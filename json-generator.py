@@ -165,7 +165,7 @@ elaboration_timeout_string = '''
         {{
           "type": "html",
           "name": {elaboration_name},
-          "html": "<h3>{header}</h3><br><p><font size=\\"5\\">Please complete your response and click <b>Next</b> to proceed {proceed_to_what}.</font></p>"
+          "html": "<h3>{header}</h3><br><p><font size=\\"5\\">Please complete your response and click <b>[Next]</b> to proceed {proceed_to_what}.</font></p>"
         }}
       ],
       "readOnly": true,
