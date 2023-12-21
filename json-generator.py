@@ -299,6 +299,13 @@ elaboration_video_link_h += youtube_link_postfix
 matrix_video_link_fg += youtube_link_postfix
 matrix_video_link_h += youtube_link_postfix
 
+print(intro_video_link_fg)
+print(intro_video_link_h)
+print(elaboration_video_link_fg)
+print(elaboration_video_link_h)
+print(matrix_video_link_fg)
+print(matrix_video_link_h)
+
 json_name_fg = "json_fg"
 json_name_h = "json_h"
 
