@@ -273,7 +273,7 @@ end = """
 """
 
 # --------------------------------------------------------------------------------------------------------------
-video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div>'''
+video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div>'''
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
@@ -281,14 +281,23 @@ elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b
 matrix_specification_fg = '''It is critical that you <b>now always</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
 matrix_specification_h = '''It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
 
-intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM"
-intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?si=rB_rgBL0VwzYDbp4"
+intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?"
+intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?"
 
-elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK"
-elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?si=u4YeIq9rnLKIKMx9"
+elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?"
+elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?"
 
-matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY"
-matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?si=rMII_qHGaYQTttRW"
+matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?"
+matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?"
+
+youtube_link_postfix =  "&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1"
+
+intro_video_link_fg += youtube_link_postfix
+intro_video_link_h += youtube_link_postfix
+elaboration_video_link_fg += youtube_link_postfix
+elaboration_video_link_h += youtube_link_postfix
+matrix_video_link_fg += youtube_link_postfix
+matrix_video_link_h += youtube_link_postfix
 
 json_name_fg = "json_fg"
 json_name_h = "json_h"

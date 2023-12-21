@@ -16,7 +16,7 @@ export const json_fg = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?si=u_w5PdgE0S2OhgzM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ]
     },
@@ -304,7 +304,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?si=PjoKYHqVvgmVF0lK\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
@@ -1753,7 +1753,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. The <b>'Next' button</b> will be enabled once you have <b>completed watching</b> the video.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?si=Pu7QI-tX4GOd5jFY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
