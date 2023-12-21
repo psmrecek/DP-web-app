@@ -135,7 +135,7 @@ instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>. Are you ready?</font></p>"
+          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }}
       ],
       "readOnly": true
@@ -154,7 +154,7 @@ elaboration_string = '''
       ],
       "readOnly": true,
       "navigationButtonsVisibility": "hide",
-      "maxTimeToFinish": 60
+      "maxTimeToFinish": 5
     }},
     '''
 
@@ -273,7 +273,7 @@ end = """
 """
 
 # --------------------------------------------------------------------------------------------------------------
-video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\">Please <b>watch</b> the instruction video. Click Next <b>after you watch the video</b>.</font></div>'''
+video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\" color=\\"#FF0000\\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\\"4\\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div>'''
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
@@ -322,7 +322,7 @@ for variant in ["FG", "H"]:
   instructions_counter = 1
   question_counter = 1
   elaboration_counter = 1
-  rows = ''
+  rows_list = ['', '', '', '', '', '', '', '', '', '']
   elaboration_question_index = 0
 
   elaboration_questions_indices = [4, 8, 15, 18, 30, 32, 39, 41, 51, 52]
@@ -368,7 +368,8 @@ for variant in ["FG", "H"]:
             str(question_counter)+'"', question_text='"'+questions[i-1]+'"', value_name='"value_'+str(question_counter)+'"'))
       page_counter += 1
       question_counter += 1
-      rows += row_string.format(value='"ground_truth_row_' +
+
+      rows_list[(i - 1) //6] += row_string.format(value='"ground_truth_row_' +
                                 str(i)+'"', question=questions[i-1])
 
       if i % 12 == 0:
@@ -422,9 +423,10 @@ for variant in ["FG", "H"]:
           page_counter += 1
           instructions_counter += 1
 
-          print(matrix_string.format(page_name='"page_' +
-                str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows))
-          page_counter += 1
-          instructions_counter += 1
+          for rows_group in rows_list:
+            print(matrix_string.format(page_name='"page_' +
+                  str(page_counter)+'"', instructions_name='"instructions_'+str(instructions_counter)+'"', specification=selected_matrix_specification, rows=rows_group))
+            page_counter += 1
+            instructions_counter += 1
 
   print(end)

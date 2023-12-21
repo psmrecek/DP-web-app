@@ -59,8 +59,6 @@
     padding-bottom: 10px !important;
 }
 
-
-/* .sd-question__header--location-top {
-    display: flex;
-    justify-content: center;
-} Centrovanie otázky - Martin */
+.sd-root-modern:not(.sd-root-modern--mobile) .sd-table__cell:not(.sd-table__cell--actions):not(.sd-table__cell--action):not(.sd-table__cell--empty.sd-table__cell--error) {
+    width: auto !important;
+}
