@@ -649,7 +649,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -994,7 +994,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -1339,7 +1339,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true
@@ -1684,7 +1684,7 @@ export const json_h = {
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }
       ],
       "readOnly": true

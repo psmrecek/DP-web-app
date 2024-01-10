@@ -135,7 +135,7 @@ instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
         }}
       ],
       "readOnly": true
