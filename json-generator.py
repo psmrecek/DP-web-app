@@ -135,7 +135,7 @@ instructions_string = '''
         {{
           "type": "html",
           "name": {instructions_name},
-          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>{header}</h3><p><font size=\\"4\\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>{specification}<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button to continue.</font></p>"
         }}
       ],
       "readOnly": true
@@ -281,14 +281,14 @@ elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b
 matrix_specification_fg = '''It is critical that you <b>now always</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
 matrix_specification_h = '''It is critical that you <b>continue to</b> choose honestly whether each answer is a Lie, a Half-truth, or a Truth.'''
 
-intro_video_link_fg = "https://www.youtube.com/embed/cSij45rBZrQ?"
-intro_video_link_h = "https://www.youtube.com/embed/0i9Sy7pZWcg?"
+intro_video_link_fg = "https://www.youtube.com/embed/ujYdLMsxaSU?"
+intro_video_link_h = "https://www.youtube.com/embed/SoHD0BZOhTk?"
 
-elaboration_video_link_fg = "https://www.youtube.com/embed/R5EyO_h85W4?"
-elaboration_video_link_h = "https://www.youtube.com/embed/B3fmEYIlziY?"
+elaboration_video_link_fg = "https://www.youtube.com/embed/gFLx9sV0QSc?"
+elaboration_video_link_h = "https://www.youtube.com/embed/PEFdm2cUTqg?"
 
-matrix_video_link_fg = "https://www.youtube.com/embed/ke2ExCyqAfs?"
-matrix_video_link_h = "https://www.youtube.com/embed/ZBoX1kwQOgs?"
+matrix_video_link_fg = "https://www.youtube.com/embed/v6KLRAIN-NA?"
+matrix_video_link_h = "https://www.youtube.com/embed/V6OPTPxGWDU?"
 
 youtube_link_postfix =  "&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1"
 
@@ -312,8 +312,8 @@ json_name_h = "json_h"
 file_name_fg = "json-fg"
 file_name_h = "json-h"
 
-surveyPostId_h = "cc1f9176-b50b-4030-8efb-ccefd93bba37"
-surveyPostId_fg = "d5f0e389-36ea-40f1-8fe7-2e128c26a52b"
+surveyPostId_h = "a41e842b-7326-4f78-b7c6-24461690c48f"
+surveyPostId_fg = "93920adb-89cd-449b-9276-e563a5e483c8"
 
 # --------------------------------------------------------------------------------------------------------------
 

@@ -20,13 +20,13 @@ function SurveyComponent({ experiment_type }) {
         var i2fg = 1000;
         var i7fg = 1000;
     } else {
-        var i1h = 96000;
-        var i2h = 35000;
-        var i7h = 40000;
+        var i1h = 99000;
+        var i2h = 42000;
+        var i7h = 42000;
 
-        var i1fg = 101000;
-        var i2fg = 37000;
-        var i7fg = 40000;
+        var i1fg = 104000;
+        var i2fg = 44000;
+        var i7fg = 42000;
     }
 
     if (experiment_type === "h") {

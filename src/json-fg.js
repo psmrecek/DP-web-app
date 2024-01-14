@@ -3,7 +3,7 @@ export const json_fg = {
     // "description": "Chill Insights, Solid Results",
     // "logo": "Logo.png",
     // "logoPosition": "right",
-    "surveyPostId": "d5f0e389-36ea-40f1-8fe7-2e128c26a52b",
+    "surveyPostId": "93920adb-89cd-449b-9276-e563a5e483c8",
     // "surveyShowDataSaving": true,
     "completedHtml": "<div><h2>Thank you for completing the survey.</h2><h3>Click the 'Done' button at the top of the screen to finish.</h3></div",
     "pages": [
@@ -16,7 +16,7 @@ export const json_fg = {
           "type": "html",
           "name": "instructions_1",
           "state": "expanded",
-          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/cSij45rBZrQ?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Welcome to the Questionnaire</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ujYdLMsxaSU?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ]
     },
@@ -304,7 +304,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_2",
-          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/R5EyO_h85W4?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>Verbal Elaboration (1/5)</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/gFLx9sV0QSc?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
@@ -649,7 +649,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_3",
-          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (2/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button to continue.</font></p>"
         }
       ],
       "readOnly": true
@@ -994,7 +994,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_4",
-          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (3/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button to continue.</font></p>"
         }
       ],
       "readOnly": true
@@ -1339,7 +1339,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_5",
-          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (4/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button to continue.</font></p>"
         }
       ],
       "readOnly": true
@@ -1684,7 +1684,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_6",
-          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button.</font></p>"
+          "html": "<h3>Verbal Elaboration (5/5)</h3><p><font size=\"4\">Your task is to <b>verbally</b> elaborate and support some of the answers you gave before. Please take your time to <b>provide detailed insights</b> and <b>relevant stories</b> from your life, explaining why you believe your responses are accurate. Each elaboration consists of <b>two statements</b> to react to. You will elaborate on <b>each statement separately</b>.<br><br>Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.<br><br>You have <b>one minute to respond to each statement</b>.<br><br>Are you ready? Click the [Next] button to continue.</font></p>"
         }
       ],
       "readOnly": true
@@ -1753,7 +1753,7 @@ export const json_fg = {
         {
           "type": "html",
           "name": "instructions_7",
-          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/ke2ExCyqAfs?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+          "html": "<h3>You're Almost There! Final Task Ahead</h3><div style=\"max-width: 40vw; padding-top: 15px;\"><font size=\"4\" color=\"#FF0000\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\"4\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div><div style=\"padding-top: 30px; display: flex; justify-content: center; align-items: center;\"><iframe style=\"width: calc(40vw - 50px - 67.2px); height: calc((40vw - 50px - 67.2px) / 1.77777778);\" src=\"https://www.youtube.com/embed/v6KLRAIN-NA?&amp;controls=0&amp;cc_load_policy=1&amp;modestbranding=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
         }
       ],
       "readOnly": true
