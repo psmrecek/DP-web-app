@@ -273,7 +273,7 @@ end = """
 """
 
 # --------------------------------------------------------------------------------------------------------------
-video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\" color=\\"#FF0000\\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\\"4\\">(Do not click the yellow [Done] button at the top until you have finished the whole survey.)</font></div>'''
+video_instructions_html = '''<div style=\\"max-width: 40vw; padding-top: 15px;\\"><font size=\\"4\\" color=\\"#FF0000\\">Please <b>watch</b> the instruction video. <b>Click [Next] after you watch the video.</b><br></font><font size=\\"4\\" color=\\"#FF0000\\"><b>Do not click the yellow [Done] button at the top until you have finished the whole survey.</b></font></div>'''
 
 elaboration_string_fg = '''Remember, always <b>respond in a way that portrays you in a positive light</b>. Convincing personality is more important for employers than absolute authenticity.'''
 elaboration_string_h = '''Remember, always <b>respond truthfully and honestly</b>. Your authenticity is more important to employers than your imperfections.'''
